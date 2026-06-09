@@ -1,0 +1,200 @@
+{
+  "path": "/usluge/vencanja/",
+  "template": "T3-service",
+  "lang": "sr",
+  "meta": {
+    "title": "Venčanja — Gardinovački",
+    "description": "Fotografisanje venčanja: od priprema do prvog plesa, fotografije koje hvataju emociju.",
+    "ogImage": "https://gardinovacki.com/wp-content/uploads/2020/04/Sitedemo.jpg",
+    "canonical": "/usluge/vencanja/"
+  },
+  "sections": [
+    {
+      "component": "standard-banner",
+      "props": {
+        "backgroundImage": {
+          "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_8863-COVER_1-1024x683.jpg",
+          "alt": "Mladenci u portretu"
+        },
+        "title": "Venčanja",
+        "subtitle": "Vaš najvažniji dan, ispričan kroz fotografije",
+        "breadcrumbs": [
+          {
+            "label": "Početna",
+            "url": "/"
+          },
+          {
+            "label": "Usluge",
+            "url": "/usluge/"
+          },
+          {
+            "label": "Venčanja",
+            "url": ""
+          }
+        ]
+      }
+    },
+    {
+      "component": "intro-text",
+      "props": {
+        "body": [
+          "Venčanja pratim od ranih jutarnjih priprema do poslednje pesme uveče. Cilj je da fotografije izgledaju prirodno — bez prinudnih poza i bez ponavljanja iste slike u 30 varijacija.",
+          "Radimo zajedno: pre venčanja se vidimo da prođemo plan dana, da se upoznamo i da znate da ću tu biti — ne kao stranac sa kamerom, već kao deo tima koji vam je tog dana potreban."
+        ],
+        "heading": "Pristup"
+      }
+    },
+    {
+      "component": "service-carousel-gallery",
+      "props": {
+        "heading": "Iz portfolija",
+        "intro": "Nekoliko nedavnih venčanja.",
+        "images": [
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_8863-COVER_1-1024x683.jpg",
+            "alt": "Tijana i Luka"
+          },
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_1832-COVER_1-1024x683.jpg",
+            "alt": "Jovana i Aleksandar"
+          },
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/01/IMG_8809-COVER-1024x683.jpg",
+            "alt": "Anica i Miroslav"
+          },
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/cover-1024x683.jpg",
+            "alt": "Kristina i Zoran"
+          },
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Mirjana-Ivan41-1024x683.jpg",
+            "alt": "Mirjana i Ivan"
+          },
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Sanja-Matija37-1024x683.jpg",
+            "alt": "Sanja i Matija"
+          }
+        ],
+        "cta": {
+          "label": "Pogledaj galerije venčanja",
+          "url": "/galerija/tijana-luka/",
+          "variant": "primary"
+        }
+      }
+    },
+    {
+      "component": "media-gallery",
+      "props": {
+        "heading": "Sve galerije venčanja",
+        "layout": "grid",
+        "items": [
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_8863-COVER_1-1024x683.jpg",
+            "alt": "Tijana & Luka",
+            "title": "Tijana & Luka",
+            "cta": {
+              "label": "Pogledaj galeriju",
+              "url": "/galerija/tijana-luka/"
+            }
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_1832-COVER_1-1024x683.jpg",
+            "alt": "Jovana & Aleksandar",
+            "title": "Jovana & Aleksandar",
+            "cta": {
+              "label": "Pogledaj galeriju",
+              "url": "/galerija/aleksandar-jovana/"
+            }
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/01/IMG_8809-COVER-1024x683.jpg",
+            "alt": "Anica & Miroslav",
+            "title": "Anica & Miroslav",
+            "cta": {
+              "label": "Pogledaj galeriju",
+              "url": "/galerija/anica-miroslav/"
+            }
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/cover-1024x683.jpg",
+            "alt": "Kristina & Zoran",
+            "title": "Kristina & Zoran",
+            "cta": {
+              "label": "Pogledaj galeriju",
+              "url": "/galerija/kristina-zoran/"
+            }
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/cover-1-1024x683.jpg",
+            "alt": "Milica & Srđan",
+            "title": "Milica & Srđan",
+            "cta": {
+              "label": "Pogledaj galeriju",
+              "url": "/galerija/milica-srdan/"
+            }
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/cover-2-1024x683.jpg",
+            "alt": "Slavica & Dejan",
+            "title": "Slavica & Dejan",
+            "cta": {
+              "label": "Pogledaj galeriju",
+              "url": "/galerija/slavica-dejan/"
+            }
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Sanja-Bojan55-1024x597.jpg",
+            "alt": "Sanja & Bojan",
+            "title": "Sanja & Bojan",
+            "cta": {
+              "label": "Pogledaj galeriju",
+              "url": "/galerija/sanja-bojan/"
+            }
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Mirjana-Ivan41-1024x683.jpg",
+            "alt": "Mirjana & Ivan",
+            "title": "Mirjana & Ivan",
+            "cta": {
+              "label": "Pogledaj galeriju",
+              "url": "/galerija/mirjana-ivan/"
+            }
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Nevena-Miroslav38-1024x683.jpg",
+            "alt": "Nevena & Miroslav",
+            "title": "Nevena & Miroslav",
+            "cta": {
+              "label": "Pogledaj galeriju",
+              "url": "/galerija/nevena-miroslav/"
+            }
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Marina-Veljko12-1024x683.jpg",
+            "alt": "Marina & Veljko",
+            "title": "Marina & Veljko",
+            "cta": {
+              "label": "Pogledaj galeriju",
+              "url": "/galerija/marina-veljko/"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "globalSections": [
+    "header",
+    "contact-form-section",
+    "footer"
+  ]
+}

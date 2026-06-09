@@ -1,0 +1,125 @@
+{
+  "path": "/galerija/tijana-luka/",
+  "template": "T4-gallery",
+  "lang": "sr",
+  "meta": {
+    "title": "Tijana & Luka — Galerija",
+    "description": "Fotografije iz galerije Tijana & Luka.",
+    "ogImage": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_8757_1-scaled.jpg",
+    "canonical": "/galerija/tijana-luka/"
+  },
+  "sections": [
+    {
+      "component": "standard-banner",
+      "props": {
+        "backgroundImage": {
+          "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_8757_1-scaled.jpg",
+          "alt": "Tijana & Luka"
+        },
+        "title": "Tijana & Luka",
+        "breadcrumbs": [
+          {
+            "label": "Početna",
+            "url": "/"
+          },
+          {
+            "label": "Galerija",
+            "url": "/galerija/tijana-luka/"
+          },
+          {
+            "label": "Tijana & Luka",
+            "url": ""
+          }
+        ]
+      }
+    },
+    {
+      "component": "media-gallery",
+      "props": {
+        "layout": "masonry",
+        "items": [
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_8757_1-scaled.jpg",
+            "alt": "Tijana & Luka — 1"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_8766_1-scaled.jpg",
+            "alt": "Tijana & Luka — 2"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_8771_1-scaled.jpg",
+            "alt": "Tijana & Luka — 3"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_8774_1-scaled.jpg",
+            "alt": "Tijana & Luka — 4"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_8775_1-scaled.jpg",
+            "alt": "Tijana & Luka — 5"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_8785_1-scaled.jpg",
+            "alt": "Tijana & Luka — 6"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_8794_1-scaled.jpg",
+            "alt": "Tijana & Luka — 7"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_8808_1-scaled.jpg",
+            "alt": "Tijana & Luka — 8"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_8809_1-scaled.jpg",
+            "alt": "Tijana & Luka — 9"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_8816_1-scaled.jpg",
+            "alt": "Tijana & Luka — 10"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_8829_1-scaled.jpg",
+            "alt": "Tijana & Luka — 11"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_8835_1-scaled.jpg",
+            "alt": "Tijana & Luka — 12"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_8841_1-scaled.jpg",
+            "alt": "Tijana & Luka — 13"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_8853_1-scaled.jpg",
+            "alt": "Tijana & Luka — 14"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_8855_1-scaled.jpg",
+            "alt": "Tijana & Luka — 15"
+          }
+        ]
+      }
+    }
+  ],
+  "globalSections": [
+    "header",
+    "contact-form-section",
+    "footer"
+  ]
+}

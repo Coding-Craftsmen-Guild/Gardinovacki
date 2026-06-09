@@ -1,0 +1,72 @@
+{
+  "path": "/paketi/mini/",
+  "template": "T6-package",
+  "lang": "sr",
+  "meta": {
+    "title": "Paket Mini — Gardinovački",
+    "description": "Fotografisanje do 3 sata, online galerija sa studijski obrađenim fotografijama.",
+    "ogImage": "https://gardinovacki.com/wp-content/uploads/2022/08/mini-paket-1024x682.jpg",
+    "canonical": "/paketi/mini/"
+  },
+  "sections": [
+    {
+      "component": "standard-banner",
+      "props": {
+        "backgroundImage": {
+          "src": "https://gardinovacki.com/wp-content/uploads/2022/08/mini-paket-1024x682.jpg",
+          "alt": "Paket Mini"
+        },
+        "title": "Mini",
+        "subtitle": "Kratko fotografisanje + online galerija",
+        "breadcrumbs": [
+          {
+            "label": "Početna",
+            "url": "/"
+          },
+          {
+            "label": "Paketi",
+            "url": "/paketi/"
+          },
+          {
+            "label": "Mini",
+            "url": ""
+          }
+        ]
+      }
+    },
+    {
+      "component": "media-showcase",
+      "props": {
+        "pretitle": "Paket Mini",
+        "heading": "Šta dobijate sa paketom Mini",
+        "intro": "Fotografisanje do 3 sata, online galerija sa studijski obrađenim fotografijama.",
+        "filterable": false,
+        "lockedTags": [
+          "Venčanja"
+        ],
+        "pageSize": 6
+      }
+    },
+    {
+      "component": "numbers",
+      "props": {
+        "heading": "Šta paket uključuje",
+        "items": [
+          {
+            "number": "01",
+            "label": "Fotografisanje do 3 sata"
+          },
+          {
+            "number": "02",
+            "label": "Online galerija sa studijski obrađenim fotografijama"
+          }
+        ]
+      }
+    }
+  ],
+  "globalSections": [
+    "header",
+    "contact-form-section",
+    "footer"
+  ]
+}

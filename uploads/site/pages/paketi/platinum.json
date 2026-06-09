@@ -1,0 +1,114 @@
+{
+  "path": "/paketi/platinum/",
+  "template": "T6-package",
+  "lang": "sr",
+  "meta": {
+    "title": "Paket Platinum — Gardinovački",
+    "description": "Celodnevno fotografisanje i video snimanje, foto sesija, 100 štampanih fotografija u drvenoj kutiji, online galerija, foto knjiga, montaža spota i dugačkog filma.",
+    "ogImage": "https://gardinovacki.com/wp-content/uploads/2020/05/platinum-paket-web-1024x683.jpg",
+    "canonical": "/paketi/platinum/"
+  },
+  "sections": [
+    {
+      "component": "standard-banner",
+      "props": {
+        "backgroundImage": {
+          "src": "https://gardinovacki.com/wp-content/uploads/2020/05/platinum-paket-web-1024x683.jpg",
+          "alt": "Paket Platinum"
+        },
+        "title": "Platinum",
+        "subtitle": "Fotografije + video + foto knjiga",
+        "breadcrumbs": [
+          {
+            "label": "Početna",
+            "url": "/"
+          },
+          {
+            "label": "Paketi",
+            "url": "/paketi/"
+          },
+          {
+            "label": "Platinum",
+            "url": ""
+          }
+        ]
+      }
+    },
+    {
+      "component": "intro-text",
+      "props": {
+        "body": [
+          "Celodnevno fotografisanje i video snimanje, foto sesija, 100 štampanih fotografija u drvenoj kutiji, online galerija, foto knjiga, montaža spota i dugačkog filma."
+        ],
+        "heading": "Šta dobijate sa paketom Platinum"
+      }
+    },
+    {
+      "component": "service-carousel-gallery",
+      "props": {
+        "heading": "Primeri",
+        "intro": "Nekoliko fotografija u stilu paketa.",
+        "images": [
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/01/IMG_9826_1-Large-1024x683.jpeg",
+            "alt": "Foto sesija"
+          },
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/01/IMG_9819_1-Large-1024x683.jpeg",
+            "alt": "Foto sesija"
+          },
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/01/IMG_9820_1-Large-1024x683.jpeg",
+            "alt": "Foto sesija"
+          },
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/01/IMG_9825_1-Large-1024x683.jpeg",
+            "alt": "Foto sesija"
+          }
+        ],
+        "cta": {
+          "label": "Pogledaj sve galerije",
+          "url": "/usluge/vencanja/",
+          "variant": "primary"
+        }
+      }
+    },
+    {
+      "component": "numbers",
+      "props": {
+        "heading": "Šta paket uključuje",
+        "items": [
+          {
+            "number": "01",
+            "label": "Celodnevno fotografisanje i video snimanje"
+          },
+          {
+            "number": "02",
+            "label": "Foto sesija istog ili drugog dana"
+          },
+          {
+            "number": "03",
+            "label": "100 štampanih fotografija u drvenoj kutiji"
+          },
+          {
+            "number": "04",
+            "label": "Online galerija sa studijski obrađenim fotografijama"
+          },
+          {
+            "number": "05",
+            "label": "Izrada foto knjige"
+          },
+          {
+            "number": "06",
+            "label": "Montaža spota i dugačkog filma"
+          }
+        ]
+      }
+    }
+  ],
+  "globalSections": [
+    "header",
+    "contact-form-section",
+    "footer"
+  ]
+}

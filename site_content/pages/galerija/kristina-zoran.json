@@ -1,0 +1,125 @@
+{
+  "path": "/galerija/kristina-zoran/",
+  "template": "T4-gallery",
+  "lang": "sr",
+  "meta": {
+    "title": "Kristina & Zoran — Galerija",
+    "description": "Fotografije iz galerije Kristina & Zoran.",
+    "ogImage": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_8257-scaled.jpg",
+    "canonical": "/galerija/kristina-zoran/"
+  },
+  "sections": [
+    {
+      "component": "standard-banner",
+      "props": {
+        "backgroundImage": {
+          "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_8257-scaled.jpg",
+          "alt": "Kristina & Zoran"
+        },
+        "title": "Kristina & Zoran",
+        "breadcrumbs": [
+          {
+            "label": "Početna",
+            "url": "/"
+          },
+          {
+            "label": "Galerija",
+            "url": "/galerija/tijana-luka/"
+          },
+          {
+            "label": "Kristina & Zoran",
+            "url": ""
+          }
+        ]
+      }
+    },
+    {
+      "component": "media-gallery",
+      "props": {
+        "layout": "masonry",
+        "items": [
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_8257-scaled.jpg",
+            "alt": "Kristina & Zoran — 1"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_8282-scaled.jpg",
+            "alt": "Kristina & Zoran — 2"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_8341-scaled.jpg",
+            "alt": "Kristina & Zoran — 3"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_8377-scaled.jpg",
+            "alt": "Kristina & Zoran — 4"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_8401-scaled.jpg",
+            "alt": "Kristina & Zoran — 5"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_8407-scaled.jpg",
+            "alt": "Kristina & Zoran — 6"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_8417-scaled.jpg",
+            "alt": "Kristina & Zoran — 7"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_8420-scaled.jpg",
+            "alt": "Kristina & Zoran — 8"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_8426-scaled.jpg",
+            "alt": "Kristina & Zoran — 9"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_8428-scaled.jpg",
+            "alt": "Kristina & Zoran — 10"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_8432-scaled.jpg",
+            "alt": "Kristina & Zoran — 11"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_8452-scaled.jpg",
+            "alt": "Kristina & Zoran — 12"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_8456-scaled.jpg",
+            "alt": "Kristina & Zoran — 13"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_8471-scaled.jpg",
+            "alt": "Kristina & Zoran — 14"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_8478-scaled.jpg",
+            "alt": "Kristina & Zoran — 15"
+          }
+        ]
+      }
+    }
+  ],
+  "globalSections": [
+    "header",
+    "contact-form-section",
+    "footer"
+  ]
+}

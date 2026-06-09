@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="sr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gardinovački — Print</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=Tenor+Sans&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/site.css" />
+<style>
+  /* ── Print-mode container ── */
+  html, body { background: #faf7f1; }
+  .print-page{
+    break-after: page;
+    page-break-after: always;
+    position: relative;
+  }
+  .print-page:last-child{ break-after: auto; page-break-after: auto; }
+  .print-page__head{
+    position: relative;
+    padding: 16px 32px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: "Tenor Sans", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.28em;
+    font-size: 9px;
+    color: #6b6258;
+    border-bottom: 1px solid #cec7b6;
+  }
+  .print-page__head .mark{
+    font-family: "Cormorant Garamond", serif;
+    text-transform: none;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+    color: #1a1612;
+    font-weight: 500;
+  }
+  .print-page__path{
+    color: #7a553a;
+    font-family: "Manrope", sans-serif;
+    text-transform: none;
+    letter-spacing: 0.02em;
+    font-size: 11px;
+  }
+
+  /* Kill fixed/sticky positioning that breaks print */
+  .site-header{ position: relative !important; background: transparent !important; backdrop-filter: none !important; color: #1a1612 !important; border-bottom: 1px solid #cec7b6 !important; padding: 18px 32px !important; }
+  .site-header .social-link{ border-color: #cec7b6 !important; color: #1a1612 !important; }
+  .package-detail__copy, .numbers__heading{ position: relative !important; top: auto !important; }
+
+  /* Force colours through */
+  *{ -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+
+  /* Static carousel for print: show all cards in a wrapping grid */
+  .cards-carousel{ overflow: visible !important; }
+  .cards-carousel__track{
+    transform: none !important;
+    transition: none !important;
+    width: 100% !important;
+    flex-wrap: wrap !important;
+  }
+  .cards-carousel__track > .card{
+    flex: 0 0 calc((100% - 2 * var(--carousel-gap, 24px)) / 3) !important;
+    break-inside: avoid;
+  }
+  .scg-carousel{ overflow: visible !important; }
+  .scg-carousel__track{
+    transform: none !important;
+    transition: none !important;
+    width: 100% !important;
+    flex-wrap: wrap !important;
+  }
+  .scg-carousel__track > .scg-slide{
+    flex: 0 0 calc((100% - 2 * var(--carousel-gap, 16px)) / 3) !important;
+    break-inside: avoid;
+  }
+
+  /* Hero needs a manageable max height in print */
+  .hero{ min-height: 0 !important; height: auto !important; }
+  .hero__content{ padding: 80px 32px 32px !important; min-height: 540px; }
+  .banner{ min-height: 0 !important; height: auto !important; }
+  .banner__content{ padding: 60px 32px 40px !important; min-height: 360px; }
+
+  /* Mobile drawer + burger never needed in print */
+  .site-header__burger, .site-header__drawer{ display: none !important; }
+  .site-header__nav, .site-header__socials{ display: flex !important; }
+
+  /* Avoid breaks in important blocks */
+  .card, .scg-slide, .package-detail__row, .numbers__row, .gallery-nav, .cross-card,
+  .section-head, .ig__cell, .footer-col, .package-detail__items{ break-inside: avoid; }
+
+  /* Don't fade IG overlay on print */
+  .ig__cell:hover .ig__overlay{ background: transparent !important; opacity: 0 !important; }
+
+  /* Masonry: tighten to ensure it prints */
+  .mg__masonry{ column-count: 3 !important; }
+  .mg__brick{ break-inside: avoid; }
+
+  @page{ size: A4; margin: 12mm 10mm; }
+  @media print{
+    .print-page__head{ background: #faf7f1; }
+    /* Long single pages within a print-page can still flow across PDF pages */
+    .print-page{ padding-bottom: 6mm; }
+    /* Limit image rendering to keep PDF responsive */
+    img{ max-height: 1100px; }
+    /* Prevent dark hero text from clipping when going to white print page */
+    .hero, .banner{ color: #fff; }
+  }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<!-- Data -->
+<script src="js/data.js"></script>
+
+<!-- React + Babel -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<!-- App scripts (order matters: icons → sections → pages → mount) -->
+<script type="text/babel" src="js/icons.jsx"></script>
+<script type="text/babel" src="js/sections.jsx"></script>
+<script type="text/babel" src="js/showcase.jsx"></script>
+<script type="text/babel" src="js/pages.jsx"></script>
+
+<script type="text/babel">
+  /* Render every page in SITE_DATA back-to-back for print. */
+  const { useState: _useState, useEffect: _useEffect, useMemo: _useMemo } = React;
+
+  function PrintPage({ page, pageIndex }) {
+    const [lightbox, setLightbox] = _useState(null); // unused in print but PageBody expects it
+    const ctx = {
+      openLightbox: () => {},
+      page,
+    };
+
+    const sections = (page.sections || []).map((s, idx) => {
+      const renderers = {
+        'carousel-hero-banner':     (s) => <CarouselHeroBanner props={s.props} />,
+        'intro-text':               (s) => <IntroText props={s.props} />,
+        'cards':                    (s) => <Cards props={s.props} pageCtx={page} />,
+        'service-carousel-gallery': (s) => <ServiceCarouselGallery props={s.props} onOpenLightbox={() => {}} />,
+        'standard-banner':          (s) => <StandardBanner props={s.props} />,
+        'feature-banner':           (s) => <FeatureBanner props={s.props} />,
+        'media-showcase':           (s) => <MediaShowcase props={s.props} />,
+        'media-gallery':            (s) => <MediaGallery props={s.props} onOpenLightbox={() => {}} />,
+        'numbers':                  (s) => <Numbers props={s.props} />,
+        'instagram-feed':           (s) => <InstagramFeed props={s.props} />,
+      };
+      const r = renderers[s.component];
+      return r ? <React.Fragment key={idx}>{r(s)}</React.Fragment> : null;
+    });
+
+    const extras = [];
+    if (page.template === 'T4-gallery') extras.push(<GalleryFooterNavPrint key="gnav" current={page} />);
+    if (page.template === 'T6-package') extras.push(<PackageCrossSellPrint key="cs" current={page} />);
+
+    const globals = window.SITE_DATA.globals;
+    const useGlobals = page.globalSections || ['header', 'contact-form-section', 'footer'];
+
+    return (
+      <article className="print-page">
+        <header className="print-page__head">
+          <span className="mark">Gardinovački</span>
+          <span>Strana {String(pageIndex + 1).padStart(2, '0')} / {String(window.SITE_DATA.pages.length).padStart(2, '0')}</span>
+          <span className="print-page__path">{page.path}</span>
+        </header>
+        {useGlobals.includes('header') && <Header data={globals.header} />}
+        <main className="page-body">
+          {sections}
+          {extras}
+        </main>
+        {useGlobals.includes('contact-form-section') && <ContactFormSection data={globals['contact-form-section']} />}
+        {useGlobals.includes('footer') && <Footer data={globals.footer} navData={globals.header} />}
+      </article>
+    );
+  }
+
+  /* Lightweight print-only versions of gallery-nav and cross-sell that mirror App.jsx's */
+  function GalleryFooterNavPrint({ current }) {
+    const galleries = window.SITE_DATA.pages.filter((p) => p.template === 'T4-gallery');
+    const i = galleries.findIndex((g) => g.path === current.path);
+    if (i === -1) return null;
+    const prev = galleries[(i - 1 + galleries.length) % galleries.length];
+    const next = galleries[(i + 1) % galleries.length];
+    const titleOf = (p) => {
+      const sb = (p.sections || []).find((s) => s.component === 'standard-banner');
+      return sb ? sb.props.title : p.path;
+    };
+    return (
+      <section className="gallery-nav">
+        <div className="gallery-nav__side gallery-nav__side--prev">
+          <span className="eyebrow">← Prethodna galerija</span>
+          <span className="gallery-nav__title">{titleOf(prev)}</span>
+        </div>
+        <div className="gallery-nav__center">
+          <span className="eyebrow">Sve galerije venčanja</span>
+        </div>
+        <div className="gallery-nav__side gallery-nav__side--next">
+          <span className="eyebrow">Sledeća galerija →</span>
+          <span className="gallery-nav__title">{titleOf(next)}</span>
+        </div>
+      </section>
+    );
+  }
+  function PackageCrossSellPrint({ current }) {
+    const packages = window.SITE_DATA.pages.filter((p) => p.template === 'T6-package');
+    const others = packages.filter((p) => p.path !== current.path);
+    const cards = others.map((p) => {
+      const banner = (p.sections || []).find((s) => s.component === 'standard-banner');
+      return {
+        image: banner.props.backgroundImage.src,
+        alt: banner.props.backgroundImage.alt,
+        title: banner.props.title,
+        description: banner.props.subtitle,
+        cta: { label: 'Pogledaj paket', url: p.path, variant: 'primary' },
+      };
+    });
+    return (
+      <Cards
+        props={{
+          pretitle: 'Drugi paketi',
+          heading: 'Pogledajte i druge pakete',
+          intro: 'Pet opcija — od kratkog fotografisanja do celodnevnog video paketa.',
+          variant: 'packages',
+          cards,
+        }}
+        pageCtx={current}
+      />
+    );
+  }
+
+  function PrintApp() {
+    const pages = window.SITE_DATA.pages;
+    return (
+      <React.Fragment>
+        {pages.map((p, idx) => <PrintPage key={p.path} page={p} pageIndex={idx} />)}
+      </React.Fragment>
+    );
+  }
+
+  ReactDOM.createRoot(document.getElementById('root')).render(<PrintApp />);
+
+  /* ── Auto-print after fonts + a buffer ── */
+  async function triggerPrint() {
+    try { if (document.fonts && document.fonts.ready) await document.fonts.ready; } catch (_) {}
+    // wait for hero/banner images to settle
+    await new Promise((r) => setTimeout(r, 1500));
+    window.print();
+  }
+  if (document.readyState === 'complete') triggerPrint();
+  else window.addEventListener('load', triggerPrint, { once: true });
+</script>
+</body>
+</html>

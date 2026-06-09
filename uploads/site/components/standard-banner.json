@@ -1,0 +1,32 @@
+{
+  "componentType": "standard-banner",
+  "description": "Page banner with a large background image, the page title (h1), an optional subtitle, and breadcrumbs. Used as the top section of every non-homepage template (T2–T8).",
+  "props": {
+    "backgroundImage": {
+      "type": "object",
+      "required": true,
+      "shape": { "src": "string (URL)", "alt": "string" }
+    },
+    "title":    { "type": "string", "required": true, "note": "Renders as the page h1." },
+    "subtitle": { "type": "string", "required": false },
+    "breadcrumbs": {
+      "type": "array",
+      "required": true,
+      "minItems": 1,
+      "item": { "label": "string", "url": "string (omit or leave empty on the last/current crumb)" }
+    }
+  },
+  "example": {
+    "backgroundImage": {
+      "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_8863-COVER_1-1024x683.jpg",
+      "alt": "Mladenci u portretu"
+    },
+    "title": "Venčanja",
+    "subtitle": "Sve što je važno za vaš najvažniji dan",
+    "breadcrumbs": [
+      { "label": "Početna", "url": "/" },
+      { "label": "Usluge",  "url": "/usluge/" },
+      { "label": "Venčanja", "url": "" }
+    ]
+  }
+}

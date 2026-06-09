@@ -1,0 +1,18 @@
+{
+  "componentType": "instagram-feed",
+  "description": "Embedded latest-from-Instagram block, rendered as a masonry grid. Posts are fetched at runtime via the Instagram API (or a server-side proxy). The component spec carries only configuration — no post data is stored in this JSON.",
+  "props": {
+    "heading": { "type": "string", "required": false, "note": "e.g. 'Poslednje sa instagrama'" },
+    "handle":  { "type": "string", "required": true,  "note": "Instagram handle without the @, e.g. 'gardinovacki_weddings'" },
+    "postCount": { "type": "integer", "required": true, "note": "How many posts to display. Typical: 6–12." },
+    "layout":  { "type": "string", "required": true, "enum": ["masonry", "grid"] },
+    "profileUrl": { "type": "string", "required": true, "note": "Full URL of the Instagram profile (used for the 'view more' link)." }
+  },
+  "example": {
+    "heading": "Poslednje sa instagrama",
+    "handle": "gardinovacki_weddings",
+    "postCount": 8,
+    "layout": "masonry",
+    "profileUrl": "https://www.instagram.com/gardinovacki_weddings/"
+  }
+}

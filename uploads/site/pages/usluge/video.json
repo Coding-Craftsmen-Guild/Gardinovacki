@@ -1,0 +1,71 @@
+{
+  "path": "/usluge/video/",
+  "template": "T3-service",
+  "lang": "sr",
+  "meta": {
+    "title": "Video — Gardinovački",
+    "description": "Filmovi i kratki spotovi sa venčanja i porodičnih događaja.",
+    "ogImage": "https://gardinovacki.com/wp-content/uploads/2020/04/Sitedemo.jpg",
+    "canonical": "/usluge/video/"
+  },
+  "sections": [
+    {
+      "component": "standard-banner",
+      "props": {
+        "backgroundImage": {
+          "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_7049-scaled.jpg",
+          "alt": "Sa snimanja"
+        },
+        "title": "Video",
+        "subtitle": "Pokret + zvuk = uspomena drugačijeg kalibra",
+        "breadcrumbs": [
+          {
+            "label": "Početna",
+            "url": "/"
+          },
+          {
+            "label": "Usluge",
+            "url": "/usluge/"
+          },
+          {
+            "label": "Video",
+            "url": ""
+          }
+        ]
+      }
+    },
+    {
+      "component": "intro-text",
+      "props": {
+        "body": [
+          "Kratki spot (3–5 min) za društvene mreže, ili dugačak film (15–25 min) koji prati ceo dan — bilo da je u pitanju venčanje ili druga proslava.",
+          "Stil je isti kao i kod fotografija: bez prinudnih kadrova, sa fokusom na prirodne trenutke."
+        ],
+        "heading": "Video kao dopuna fotografiji"
+      }
+    },
+    {
+      "component": "media-gallery",
+      "props": {
+        "heading": "Spotovi",
+        "intro": "Primere možete pogledati po dogovoru — link na pun spot šaljem na zahtev.",
+        "layout": "grid",
+        "items": [
+          {
+            "type": "video",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_7049-scaled.jpg",
+            "videoUrl": "",
+            "alt": "Demo spot (placeholder)",
+            "title": "Demo spot",
+            "description": "Placeholder — aktuelni spotovi se šalju na zahtev. Statički crawl nije uhvatio embed video."
+          }
+        ]
+      }
+    }
+  ],
+  "globalSections": [
+    "header",
+    "contact-form-section",
+    "footer"
+  ]
+}

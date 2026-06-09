@@ -1,0 +1,125 @@
+{
+  "path": "/galerija/aleksandar-jovana/",
+  "template": "T4-gallery",
+  "lang": "sr",
+  "meta": {
+    "title": "Jovana & Aleksandar — Galerija",
+    "description": "Fotografije iz galerije Jovana & Aleksandar.",
+    "ogImage": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_1736_1-scaled.jpg",
+    "canonical": "/galerija/aleksandar-jovana/"
+  },
+  "sections": [
+    {
+      "component": "standard-banner",
+      "props": {
+        "backgroundImage": {
+          "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_1736_1-scaled.jpg",
+          "alt": "Jovana & Aleksandar"
+        },
+        "title": "Jovana & Aleksandar",
+        "breadcrumbs": [
+          {
+            "label": "Početna",
+            "url": "/"
+          },
+          {
+            "label": "Galerija",
+            "url": "/galerija/tijana-luka/"
+          },
+          {
+            "label": "Jovana & Aleksandar",
+            "url": ""
+          }
+        ]
+      }
+    },
+    {
+      "component": "media-gallery",
+      "props": {
+        "layout": "masonry",
+        "items": [
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_1736_1-scaled.jpg",
+            "alt": "Jovana & Aleksandar — 1"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_1738_1-scaled.jpg",
+            "alt": "Jovana & Aleksandar — 2"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_1743_1-scaled.jpg",
+            "alt": "Jovana & Aleksandar — 3"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_1754_1-scaled.jpg",
+            "alt": "Jovana & Aleksandar — 4"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_1770_1-scaled.jpg",
+            "alt": "Jovana & Aleksandar — 5"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_1780_1-scaled.jpg",
+            "alt": "Jovana & Aleksandar — 6"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_1781_1-scaled.jpg",
+            "alt": "Jovana & Aleksandar — 7"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_1800_1-scaled.jpg",
+            "alt": "Jovana & Aleksandar — 8"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_1801_1-scaled.jpg",
+            "alt": "Jovana & Aleksandar — 9"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_1804_1-scaled.jpg",
+            "alt": "Jovana & Aleksandar — 10"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_1806_1-scaled.jpg",
+            "alt": "Jovana & Aleksandar — 11"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_1816_1-scaled.jpg",
+            "alt": "Jovana & Aleksandar — 12"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_1823_1-scaled.jpg",
+            "alt": "Jovana & Aleksandar — 13"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_1832-COVER_1-scaled.jpg",
+            "alt": "Jovana & Aleksandar — 14"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_1834_1-scaled.jpg",
+            "alt": "Jovana & Aleksandar — 15"
+          }
+        ]
+      }
+    }
+  ],
+  "globalSections": [
+    "header",
+    "contact-form-section",
+    "footer"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "componentType": "cards",
+  "description": "Grid of cards (typically 3 across on desktop). Used to promote services, packages, or any list of CTAs. Each card has an image, title, short description, and a CTA. The `variant` prop is a hint to the renderer for visual styling (e.g., services vs. packages may have different card chrome).",
+  "props": {
+    "heading": { "type": "string", "required": false },
+    "intro":   { "type": "string", "required": false, "note": "Optional supporting copy under the heading." },
+    "variant": {
+      "type": "string",
+      "required": true,
+      "enum": ["services", "packages", "generic"]
+    },
+    "cards": {
+      "type": "array",
+      "required": true,
+      "minItems": 1,
+      "item": {
+        "image": "string (URL)",
+        "alt":   "string",
+        "title": "string",
+        "description": "string (short, ~120 chars)",
+        "cta":   { "label": "string", "url": "string", "variant": "primary | secondary" }
+      }
+    }
+  },
+  "example": {
+    "heading": "Portfolio",
+    "variant": "services",
+    "cards": [
+      {
+        "image": "https://gardinovacki.com/wp-content/uploads/2020/05/gold-paket-web.jpg",
+        "alt": "Venčanje",
+        "title": "Venčanja",
+        "description": "Fotografije koje hvataju emociju, ne pozu.",
+        "cta": { "label": "Istraži", "url": "/usluge/vencanja/", "variant": "primary" }
+      },
+      {
+        "image": "https://gardinovacki.com/wp-content/uploads/2020/04/Vida13-scaled.jpg",
+        "alt": "Rođendan",
+        "title": "Rođendani i ostalo",
+        "description": "Porodice, krštenja, slave i intimne proslave.",
+        "cta": { "label": "Istraži", "url": "/usluge/rodjendani-i-ostalo/", "variant": "primary" }
+      },
+      {
+        "image": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_7049-scaled.jpg",
+        "alt": "Video",
+        "title": "Video",
+        "description": "Filmovi i kratki spotovi sa vaših događaja.",
+        "cta": { "label": "Istraži", "url": "/usluge/video/", "variant": "primary" }
+      }
+    ]
+  }
+}

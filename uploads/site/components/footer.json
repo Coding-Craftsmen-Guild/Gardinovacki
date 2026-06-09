@@ -1,0 +1,20 @@
+{
+  "componentType": "footer",
+  "description": "Minimal footer: copyright line and social icons. Used on every page via globals.",
+  "props": {
+    "copyright": { "type": "string", "required": true },
+    "socials": {
+      "type": "array",
+      "required": true,
+      "item": { "platform": "facebook | instagram | tiktok", "url": "string", "label": "string" }
+    }
+  },
+  "example": {
+    "copyright": "© 2026 Gardinovački",
+    "socials": [
+      { "platform": "facebook",  "url": "https://www.facebook.com/GardinovackiWeddings/",   "label": "Facebook"  },
+      { "platform": "instagram", "url": "https://www.instagram.com/gardinovacki_weddings/", "label": "Instagram" },
+      { "platform": "tiktok",    "url": "https://www.tiktok.com/@gardinovacki",             "label": "TikTok"    }
+    ]
+  }
+}

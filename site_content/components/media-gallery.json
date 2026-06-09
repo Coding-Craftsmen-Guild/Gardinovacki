@@ -1,0 +1,41 @@
+{
+  "componentType": "media-gallery",
+  "description": "Mixed grid of media items. Each item can be an image or a video. Items may include a title, description, and an optional CTA — so the same component renders both plain photo galleries (T4) and 'service-summary' grids (T3) where each tile links to a full gallery.",
+  "props": {
+    "heading": { "type": "string", "required": false },
+    "layout":  { "type": "string", "required": false, "enum": ["grid", "masonry"], "default": "grid" },
+    "items": {
+      "type": "array",
+      "required": true,
+      "minItems": 1,
+      "item": {
+        "type":        "string ('image' | 'video')",
+        "src":         "string (URL — image src, or video poster for type=video)",
+        "videoUrl":    "string (only when type=video; mp4/embed URL)",
+        "alt":         "string",
+        "title":       "string (optional, displayed as caption)",
+        "description": "string (optional)",
+        "cta":         "object (optional) { label, url }"
+      }
+    }
+  },
+  "example": {
+    "heading": "Galerija",
+    "layout": "masonry",
+    "items": [
+      {
+        "type": "image",
+        "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_1832-COVER_1-1024x683.jpg",
+        "alt": "Jovana i Aleksandar — naslovna",
+        "title": "Jovana & Aleksandar",
+        "description": "Venčanje, februar 2023",
+        "cta": { "label": "Pogledaj galeriju", "url": "/galerija/aleksandar-jovana/" }
+      },
+      {
+        "type": "image",
+        "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_1834_1-scaled.jpg",
+        "alt": "Detalj sa venčanja"
+      }
+    ]
+  }
+}

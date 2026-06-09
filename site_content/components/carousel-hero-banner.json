@@ -1,0 +1,45 @@
+{
+  "componentType": "carousel-hero-banner",
+  "description": "Full-bleed homepage hero. Auto-advancing slideshow of large background photos with an overlay headline (renders as h1), a short SEO intro paragraph, and one or more CTA buttons.",
+  "props": {
+    "slides": {
+      "type": "array",
+      "required": true,
+      "minItems": 1,
+      "item": {
+        "image": "string (image URL, large/landscape)",
+        "alt": "string"
+      }
+    },
+    "headline": {
+      "type": "string",
+      "required": true,
+      "note": "Renders as the page h1. Keep under ~80 chars."
+    },
+    "intro": {
+      "type": "string",
+      "required": true,
+      "note": "Short SEO copy that sits under the headline. Aim for 100–180 chars."
+    },
+    "ctas": {
+      "type": "array",
+      "required": true,
+      "item": { "label": "string", "url": "string", "variant": "primary | secondary" }
+    }
+  },
+  "example": {
+    "slides": [
+      { "image": "https://gardinovacki.com/wp-content/uploads/2020/04/IMG_4880-scaled.jpg",     "alt": "Mladenci pred crkvom" },
+      { "image": "https://gardinovacki.com/wp-content/uploads/2020/04/IMG_7368_1-1-scaled.jpg", "alt": "Detalj sa venčanja" },
+      { "image": "https://gardinovacki.com/wp-content/uploads/2020/04/IMG_9655_1_1-scaled.jpg", "alt": "Mladenci napolju" },
+      { "image": "https://gardinovacki.com/wp-content/uploads/2020/04/sanjaigor.jpg",           "alt": "Sanja i Igor" },
+      { "image": "https://gardinovacki.com/wp-content/uploads/2020/04/IMG_4820-scaled.jpg",     "alt": "Mladenci u prirodi" }
+    ],
+    "headline": "Fotografije koje pričaju priče",
+    "intro": "Venčanja i fine-art fotografija iz Srbije — sačuvajmo najlepše trenutke vašeg najvažnijeg dana.",
+    "ctas": [
+      { "label": "Istraži usluge", "url": "/usluge/", "variant": "primary"   },
+      { "label": "Istraži pakete", "url": "/paketi/", "variant": "secondary" }
+    ]
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "path": "/paketi/silver/",
+  "template": "T6-package",
+  "lang": "sr",
+  "meta": {
+    "title": "Paket Silver — Gardinovački",
+    "description": "Celodnevno fotografisanje, foto sesija istog dana, 100 štampanih fotografija u drvenoj kutiji, online galerija.",
+    "ogImage": "https://gardinovacki.com/wp-content/uploads/2020/05/silver-paket-web-1024x683.jpg",
+    "canonical": "/paketi/silver/"
+  },
+  "sections": [
+    {
+      "component": "standard-banner",
+      "props": {
+        "backgroundImage": {
+          "src": "https://gardinovacki.com/wp-content/uploads/2020/05/silver-paket-web-1024x683.jpg",
+          "alt": "Paket Silver"
+        },
+        "title": "Silver",
+        "subtitle": "Celodnevne fotografije + foto sesija",
+        "breadcrumbs": [
+          {
+            "label": "Početna",
+            "url": "/"
+          },
+          {
+            "label": "Paketi",
+            "url": "/paketi/"
+          },
+          {
+            "label": "Silver",
+            "url": ""
+          }
+        ]
+      }
+    },
+    {
+      "component": "intro-text",
+      "props": {
+        "body": [
+          "Celodnevno fotografisanje, foto sesija istog dana, 100 štampanih fotografija u drvenoj kutiji, online galerija."
+        ],
+        "heading": "Šta dobijate sa paketom Silver"
+      }
+    },
+    {
+      "component": "service-carousel-gallery",
+      "props": {
+        "heading": "Primeri",
+        "intro": "Nekoliko fotografija u stilu paketa.",
+        "images": [
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/06/IMG_1881-1024x683.jpg",
+            "alt": "Foto sesija"
+          },
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/06/IMG_1932-1024x683.jpg",
+            "alt": "Foto sesija"
+          },
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/06/IMG_1926-1024x683.jpg",
+            "alt": "Foto sesija"
+          },
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/06/IMG_1884-1024x683.jpg",
+            "alt": "Foto sesija"
+          }
+        ],
+        "cta": {
+          "label": "Pogledaj sve galerije",
+          "url": "/usluge/vencanja/",
+          "variant": "primary"
+        }
+      }
+    },
+    {
+      "component": "numbers",
+      "props": {
+        "heading": "Šta paket uključuje",
+        "items": [
+          {
+            "number": "01",
+            "label": "Celodnevno fotografisanje"
+          },
+          {
+            "number": "02",
+            "label": "Foto sesija istog dana"
+          },
+          {
+            "number": "03",
+            "label": "100 štampanih fotografija u drvenoj kutiji"
+          },
+          {
+            "number": "04",
+            "label": "Online galerija sa studijski obrađenim fotografijama"
+          }
+        ]
+      }
+    }
+  ],
+  "globalSections": [
+    "header",
+    "contact-form-section",
+    "footer"
+  ]
+}

@@ -1,0 +1,926 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gardinovački — Style Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=Tenor+Sans&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    /* ——— Palette: marble & olive ——— */
+    --paper:        #f8f8f8;  /* site background — page surface   */
+    --marble:       #ece5e0;  /* accent — section blocks, cards   */
+    --veining:      #cfc7bf;  /* stone mid — dividers, soft fills */
+    --oak:          #44473a;  /* light olive — subtle tints       */
+    --walnut:       #24261b;  /* contrast olive — the one accent  */
+    --walnut-deep:  #0b0b0b;  /* near-black — accent hover        */
+    --ink:          #0b0b0b;  /* font color — text, primary button */
+    --ink-2:        #1c1c18;  /* body copy                        */
+    --muted:        #6f6d65;  /* meta / supporting text           */
+    --hairline:     #ddd8d1;
+    --hairline-2:   #e6e1da;
+
+    /* ——— Type ——— */
+    --f-display: "Cormorant Garamond", "Garamond", "Times New Roman", serif;
+    --f-italic:  "Cormorant Garamond", "Garamond", serif;
+    --f-ui:      "Tenor Sans", "Optima", "Helvetica Neue", sans-serif;
+    --f-body:    "Manrope", "Helvetica Neue", sans-serif;
+
+    /* ——— Spacing (8pt) ——— */
+    --s-1: 4px;
+    --s-2: 8px;
+    --s-3: 12px;
+    --s-4: 16px;
+    --s-5: 24px;
+    --s-6: 32px;
+    --s-7: 48px;
+    --s-8: 64px;
+    --s-9: 96px;
+    --s-10: 128px;
+
+    --r-0: 0px;
+    --r-pill: 999px;
+  }
+
+  *{ box-sizing: border-box; }
+  html, body { background: var(--paper); color: var(--ink); }
+  body{
+    margin: 0;
+    font-family: var(--f-body);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--ink-2);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* ——— Page layout ——— */
+  .page{ max-width: 1240px; margin: 0 auto; padding: var(--s-9) var(--s-8) var(--s-10); }
+  @media (max-width: 800px){
+    .page{ padding: var(--s-7) var(--s-5) var(--s-8); }
+  }
+
+  /* ——— Brand header ——— */
+  .brand{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--s-7);
+    align-items: end;
+    padding-bottom: var(--s-7);
+    border-bottom: 1px solid var(--hairline);
+  }
+  .brand .eyebrow{
+    font-family: var(--f-ui);
+    text-transform: uppercase;
+    letter-spacing: 0.32em;
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: var(--s-5);
+  }
+  .brand h1{
+    font-family: var(--f-display);
+    font-weight: 400;
+    font-size: clamp(56px, 8vw, 108px);
+    line-height: 0.98;
+    letter-spacing: -0.01em;
+    margin: 0 0 var(--s-4);
+    color: var(--ink);
+  }
+  .brand h1 em{
+    font-style: italic;
+    font-family: var(--f-italic);
+    font-weight: 400;
+    color: var(--walnut);
+  }
+  .brand .lede{
+    max-width: 56ch;
+    font-family: var(--f-body);
+    font-size: 17px;
+    line-height: 1.55;
+    color: var(--ink-2);
+  }
+  .brand-mark{ width: 200px; flex: none; }
+  .brand-mark img{ width: 100%; height: auto; display: block; }
+  @media (max-width: 800px){
+    .brand{ grid-template-columns: 1fr; }
+    .brand-mark{ width: 140px; }
+  }
+
+  /* ——— Section ——— */
+  section{ margin-top: var(--s-9); }
+  .sec-head{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--s-5);
+    margin-bottom: var(--s-6);
+    padding-bottom: var(--s-3);
+    border-bottom: 1px solid var(--hairline);
+  }
+  .sec-head h2{
+    font-family: var(--f-display);
+    font-weight: 400;
+    font-size: 44px;
+    margin: 0;
+    color: var(--ink);
+    letter-spacing: -0.005em;
+    line-height: 1;
+  }
+  .sec-head .sec-no{
+    font-family: var(--f-ui);
+    text-transform: uppercase;
+    letter-spacing: 0.32em;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .sec-head .sec-meta{
+    font-family: var(--f-italic);
+    font-style: italic;
+    font-size: 19px;
+    color: var(--muted);
+  }
+
+  /* ——— Color palette ——— */
+  .swatches{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: var(--s-4);
+  }
+  @media (max-width: 1000px){ .swatches{ grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 560px){ .swatches{ grid-template-columns: repeat(2, 1fr); } }
+  .sw{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--hairline);
+    background: var(--paper);
+  }
+  .sw-chip{
+    aspect-ratio: 4/5;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .sw-meta{
+    padding: var(--s-4);
+    font-family: var(--f-ui);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink);
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-1);
+  }
+  .sw-meta .name{ font-size: 13px; }
+  .sw-meta .hex{
+    font-family: var(--f-body);
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+    text-transform: lowercase;
+    font-weight: 400;
+  }
+  .sw-meta .role{
+    font-family: var(--f-italic);
+    font-style: italic;
+    font-size: 14px;
+    text-transform: none;
+    letter-spacing: 0;
+    color: var(--muted);
+    margin-top: var(--s-2);
+  }
+
+  /* ——— Typography specimens ——— */
+  .type-stack{ display: flex; flex-direction: column; gap: var(--s-7); }
+  .spec{
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: var(--s-6);
+    align-items: start;
+    padding-bottom: var(--s-6);
+    border-bottom: 1px dashed var(--hairline);
+  }
+  .spec:last-child{ border-bottom: none; padding-bottom: 0; }
+  @media (max-width: 800px){ .spec{ grid-template-columns: 1fr; gap: var(--s-3); } }
+  .spec-label{
+    font-family: var(--f-ui);
+    text-transform: uppercase;
+    letter-spacing: 0.28em;
+    font-size: 11px;
+    color: var(--muted);
+    padding-top: var(--s-3);
+  }
+  .spec-label small{
+    display: block;
+    margin-top: var(--s-2);
+    font-family: var(--f-body);
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 12px;
+    color: var(--veining);
+    font-weight: 400;
+  }
+
+  .t-h1{ font-family: var(--f-display); font-weight: 400; font-size: 96px; line-height: 0.98; letter-spacing: -0.012em; color: var(--ink); margin: 0; }
+  .t-h2{ font-family: var(--f-display); font-weight: 400; font-size: 60px; line-height: 1.02; letter-spacing: -0.005em; color: var(--ink); margin: 0; }
+  .t-h3{ font-family: var(--f-display); font-weight: 500; font-size: 34px; line-height: 1.15; letter-spacing: 0; color: var(--ink); margin: 0; }
+  .t-quote{
+    font-family: var(--f-italic);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.25;
+    color: var(--walnut);
+    margin: 0;
+    max-width: 28ch;
+  }
+  .t-eyebrow{
+    font-family: var(--f-ui);
+    text-transform: uppercase;
+    letter-spacing: 0.36em;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .t-body{
+    font-family: var(--f-body);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.65;
+    color: var(--ink-2);
+    max-width: 62ch;
+    margin: 0;
+  }
+  .t-small{
+    font-family: var(--f-body);
+    font-size: 13px;
+    line-height: 1.55;
+    color: var(--muted);
+    letter-spacing: 0.01em;
+  }
+  .t-caption{
+    font-family: var(--f-italic);
+    font-style: italic;
+    font-size: 19px;
+    color: var(--muted);
+  }
+
+  /* ——— Buttons ——— */
+  .btn-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--s-5);
+  }
+  @media (max-width: 800px){ .btn-grid{ grid-template-columns: 1fr; } }
+  .btn-cell{
+    border: 1px solid var(--hairline);
+    background: var(--paper);
+    padding: var(--s-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-5);
+  }
+  .btn-cell .label{
+    font-family: var(--f-ui);
+    text-transform: uppercase;
+    letter-spacing: 0.28em;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .btn-row{ display: flex; flex-wrap: wrap; gap: var(--s-3); align-items: center; }
+
+  .btn{
+    font-family: var(--f-ui);
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-size: 12px;
+    padding: 16px 28px;
+    border: 1px solid var(--ink);
+    background: var(--ink);
+    color: var(--paper);
+    cursor: pointer;
+    transition: all .25s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: var(--r-0);
+    text-decoration: none;
+    line-height: 1;
+  }
+  .btn:hover{ background: var(--walnut-deep); border-color: var(--walnut-deep); }
+  .btn .arrow{ display: inline-block; transition: transform .3s ease; }
+  .btn:hover .arrow{ transform: translateX(4px); }
+
+  .btn--ghost{
+    background: transparent;
+    color: var(--ink);
+  }
+  .btn--ghost:hover{ background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+  .btn--wood{
+    background: var(--walnut);
+    border-color: var(--walnut);
+    color: var(--paper);
+  }
+  .btn--wood:hover{ background: var(--walnut-deep); border-color: var(--walnut-deep); }
+
+  .btn--small{ padding: 12px 20px; font-size: 11px; letter-spacing: 0.2em; }
+  .btn--lg{ padding: 22px 40px; font-size: 13px; letter-spacing: 0.28em; }
+
+  .btn--link{
+    background: transparent;
+    border: none;
+    color: var(--ink);
+    padding: 8px 0;
+    border-bottom: 1px solid var(--ink);
+    border-radius: 0;
+  }
+  .btn--link:hover{ background: transparent; color: var(--walnut-deep); border-color: var(--walnut-deep); }
+
+  .btn:disabled, .btn[aria-disabled="true"]{
+    opacity: .35;
+    cursor: not-allowed;
+  }
+
+  .iconbtn{
+    width: 44px; height: 44px;
+    display: inline-flex; align-items: center; justify-content: center;
+    border: 1px solid var(--ink);
+    background: transparent;
+    color: var(--ink);
+    cursor: pointer;
+    transition: all .2s ease;
+  }
+  .iconbtn:hover{ background: var(--ink); color: var(--paper); }
+
+  /* ——— Forms ——— */
+  .form-grid{ display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-6); }
+  @media (max-width: 800px){ .form-grid{ grid-template-columns: 1fr; } }
+  .field{ display: flex; flex-direction: column; gap: var(--s-2); }
+  .field label{
+    font-family: var(--f-ui);
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .field input, .field textarea, .field select{
+    font-family: var(--f-body);
+    font-size: 16px;
+    padding: 14px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--ink-2);
+    color: var(--ink);
+    outline: none;
+    transition: border-color .2s ease;
+  }
+  .field input::placeholder, .field textarea::placeholder{ color: var(--veining); }
+  .field input:focus, .field textarea:focus, .field select:focus{
+    border-bottom-color: var(--walnut);
+  }
+  .field textarea{ resize: vertical; min-height: 96px; }
+
+  /* ——— Spacing scale viz ——— */
+  .scale{ display: flex; flex-direction: column; gap: var(--s-3); }
+  .scale-row{ display: grid; grid-template-columns: 80px 80px 1fr; gap: var(--s-4); align-items: center; }
+  .scale-row .name{ font-family: var(--f-ui); text-transform: uppercase; letter-spacing: 0.22em; font-size: 11px; color: var(--ink); }
+  .scale-row .px{ font-family: var(--f-body); font-size: 12px; color: var(--muted); }
+  .scale-bar{ height: 8px; background: var(--walnut); }
+
+  /* ——— Sample composition ——— */
+  .composition{
+    background: var(--marble);
+    border: 1px solid var(--hairline);
+    padding: var(--s-7) var(--s-7) var(--s-9);
+  }
+  .nav{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding-bottom: var(--s-6);
+    border-bottom: 1px solid var(--hairline);
+    gap: var(--s-5);
+  }
+  .nav-l, .nav-r{ display: flex; gap: var(--s-6); }
+  .nav-r{ justify-content: flex-end; }
+  .nav a{
+    font-family: var(--f-ui);
+    text-transform: uppercase;
+    letter-spacing: 0.24em;
+    font-size: 12px;
+    color: var(--ink);
+    text-decoration: none;
+    position: relative;
+    padding: 4px 0;
+  }
+  .nav a::after{
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: -4px;
+    height: 1px;
+    background: var(--ink);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .3s ease;
+  }
+  .nav a:hover::after, .nav a.active::after{ transform: scaleX(1); }
+  .nav .nav-mark{
+    font-family: var(--f-display);
+    font-size: 26px;
+    letter-spacing: 0.04em;
+    color: var(--ink);
+    font-weight: 500;
+  }
+
+  .hero{
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: var(--s-7);
+    margin-top: var(--s-8);
+    align-items: center;
+  }
+  @media (max-width: 900px){ .hero{ grid-template-columns: 1fr; } }
+  .hero .eyebrow{
+    font-family: var(--f-ui);
+    text-transform: uppercase;
+    letter-spacing: 0.36em;
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: var(--s-5);
+  }
+  .hero h3{
+    font-family: var(--f-display);
+    font-weight: 400;
+    font-size: clamp(44px, 5.6vw, 76px);
+    line-height: 1;
+    letter-spacing: -0.01em;
+    margin: 0 0 var(--s-5);
+    color: var(--ink);
+  }
+  .hero h3 em{ font-family: var(--f-italic); font-style: italic; color: var(--walnut); font-weight: 400; }
+  .hero p{
+    font-family: var(--f-body);
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--ink-2);
+    max-width: 44ch;
+    margin: 0 0 var(--s-6);
+  }
+  .hero .ctas{ display: flex; gap: var(--s-3); flex-wrap: wrap; }
+
+  .hero-img{
+    aspect-ratio: 4/5;
+    background:
+      repeating-linear-gradient(135deg,
+        rgba(122,85,58,0.12) 0 14px,
+        rgba(122,85,58,0.03) 14px 28px),
+      var(--marble);
+    border: 1px solid var(--hairline);
+    position: relative;
+  }
+  .hero-img::after{
+    content: "[ portrait ]";
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--f-ui);
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--walnut-deep);
+  }
+
+  .gallery{
+    margin-top: var(--s-9);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--s-4);
+  }
+  @media (max-width: 800px){ .gallery{ grid-template-columns: 1fr 1fr; } }
+  .ph{
+    aspect-ratio: 3/4;
+    background:
+      repeating-linear-gradient(135deg,
+        rgba(122,85,58,0.12) 0 14px,
+        rgba(122,85,58,0.03) 14px 28px),
+      var(--marble);
+    border: 1px solid var(--hairline);
+    position: relative;
+    overflow: hidden;
+  }
+  .ph .ph-label{
+    position: absolute;
+    bottom: var(--s-3); left: var(--s-3);
+    font-family: var(--f-italic);
+    font-style: italic;
+    font-size: 14px;
+    color: var(--ink);
+    background: rgba(242,238,230,.88);
+    padding: 4px 10px;
+  }
+  .ph .ph-meta{
+    position: absolute;
+    top: var(--s-3); right: var(--s-3);
+    font-family: var(--f-ui);
+    font-size: 10px;
+    letter-spacing: 0.24em;
+    color: var(--muted);
+    text-transform: uppercase;
+    background: rgba(242,238,230,.88);
+    padding: 4px 10px;
+  }
+
+  /* ——— Tags / pills ——— */
+  .pills{ display: flex; gap: var(--s-2); flex-wrap: wrap; }
+  .pill{
+    font-family: var(--f-ui);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 10px;
+    padding: 6px 12px;
+    border: 1px solid var(--ink-2);
+    color: var(--ink-2);
+    border-radius: var(--r-pill);
+    background: transparent;
+    cursor: pointer;
+    transition: all .2s ease;
+  }
+  .pill:hover, .pill.active{ background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .pill--wood{ border-color: var(--walnut); color: var(--walnut); }
+  .pill--wood:hover, .pill--wood.active{ background: var(--walnut); color: var(--paper); }
+
+  /* ——— Footer ——— */
+  .end{
+    margin-top: var(--s-9);
+    padding-top: var(--s-6);
+    border-top: 1px solid var(--hairline);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: var(--s-5);
+    flex-wrap: wrap;
+  }
+  .end .mark{
+    font-family: var(--f-display);
+    font-size: 26px;
+    letter-spacing: 0.04em;
+    color: var(--ink);
+    font-weight: 500;
+  }
+  .end .meta{
+    font-family: var(--f-ui);
+    text-transform: uppercase;
+    letter-spacing: 0.24em;
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  /* utilities */
+  .row{ display: flex; gap: var(--s-5); align-items: center; flex-wrap: wrap; }
+</style>
+</head>
+<body>
+<main class="page" data-screen-label="01 Style Guide">
+
+  <!-- ═════════════════════════════════════════ HEADER -->
+  <header class="brand">
+    <div>
+      <div class="eyebrow">Brand Style Guide · v0.2</div>
+      <h1>Gardinovački <em>—</em><br/>Weddings &amp; Fine Art</h1>
+      <p class="lede">A working look-and-feel for the photography site. Editorial restraint, generous whitespace, marble surfaces and a warm walnut accent — built so the work, not the chrome, carries the page.</p>
+    </div>
+    <div class="brand-mark">
+      <img src="assets/logo.webp" alt="Gardinovački — Weddings &amp; Fine Art" />
+    </div>
+  </header>
+
+  <!-- ═════════════════════════════════════════ COLOR -->
+  <section>
+    <div class="sec-head">
+      <div class="row" style="gap: var(--s-5);">
+        <span class="sec-no">01 / Palette</span>
+        <h2>Colour</h2>
+      </div>
+      <span class="sec-meta">marble &amp; wood</span>
+    </div>
+
+    <div class="swatches">
+      <div class="sw">
+        <div class="sw-chip" style="background: var(--paper);"></div>
+        <div class="sw-meta">
+          <span class="name">Paper</span>
+          <span class="hex">#f2eee6</span>
+          <span class="role">Default page surface</span>
+        </div>
+      </div>
+      <div class="sw">
+        <div class="sw-chip" style="background: var(--marble);"></div>
+        <div class="sw-meta">
+          <span class="name">Marble</span>
+          <span class="hex">#e5e0d3</span>
+          <span class="role">Section blocks, cards</span>
+        </div>
+      </div>
+      <div class="sw">
+        <div class="sw-chip" style="background: var(--veining);"></div>
+        <div class="sw-meta">
+          <span class="name">Stone</span>
+          <span class="hex">#b8b1a0</span>
+          <span class="role">Dividers, soft fills</span>
+        </div>
+      </div>
+      <div class="sw">
+        <div class="sw-chip" style="background: var(--oak);"></div>
+        <div class="sw-meta">
+          <span class="name">Oak</span>
+          <span class="hex">#c69869</span>
+          <span class="role">Light wood — hover tints</span>
+        </div>
+      </div>
+      <div class="sw">
+        <div class="sw-chip" style="background: var(--walnut);"></div>
+        <div class="sw-meta">
+          <span class="name">Walnut</span>
+          <span class="hex">#7a553a</span>
+          <span class="role">The one accent</span>
+        </div>
+      </div>
+      <div class="sw">
+        <div class="sw-chip" style="background: var(--ink);"></div>
+        <div class="sw-meta">
+          <span class="name">Ink</span>
+          <span class="hex">#1a1612</span>
+          <span class="role">Text, primary button</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════════════════════════════════════ TYPE -->
+  <section>
+    <div class="sec-head">
+      <div class="row" style="gap: var(--s-5);">
+        <span class="sec-no">02 / Type</span>
+        <h2>Typography</h2>
+      </div>
+      <span class="sec-meta">Cormorant · Tenor · Manrope</span>
+    </div>
+
+    <div class="type-stack">
+
+      <div class="spec">
+        <div class="spec-label">Display H1 <small>Cormorant Garamond · 96 / 98% · −1.2%</small></div>
+        <h1 class="t-h1">The day, <em style="font-family: var(--f-italic); font-style: italic; color: var(--walnut); font-weight: 400;">remembered</em> in light.</h1>
+      </div>
+
+      <div class="spec">
+        <div class="spec-label">H2 <small>Cormorant Garamond · 60 / 102%</small></div>
+        <h2 class="t-h2">A quiet record of the things you'll forget.</h2>
+      </div>
+
+      <div class="spec">
+        <div class="spec-label">H3 <small>Cormorant Garamond 500 · 34 / 115%</small></div>
+        <h3 class="t-h3">Recently photographed</h3>
+      </div>
+
+      <div class="spec">
+        <div class="spec-label">Editorial Quote <small>Cormorant Garamond Italic · 38 / 125%</small></div>
+        <p class="t-quote">"He didn't take pictures of us — he kept the afternoon."</p>
+      </div>
+
+      <div class="spec">
+        <div class="spec-label">Eyebrow <small>Tenor Sans · 13 · 0.36em</small></div>
+        <div class="t-eyebrow">Selected work — 2024 &amp; 2025</div>
+      </div>
+
+      <div class="spec">
+        <div class="spec-label">Body <small>Manrope 400 · 17 / 165%</small></div>
+        <p class="t-body">I photograph weddings the way I'd photograph a small, important country — with patience, in available light, and with a long enough lens that no one notices me at first. The aim isn't to stage your day; it's to keep it. The walk to the church. The cousin who can't stop laughing. The two minutes you sit alone in the car before the rest begins.</p>
+      </div>
+
+      <div class="spec">
+        <div class="spec-label">Small / Meta <small>Manrope 400 · 13</small></div>
+        <p class="t-small">Belgrade · Novi Sad · Beograd · serving Serbia &amp; the region · available worldwide on request</p>
+      </div>
+
+      <div class="spec">
+        <div class="spec-label">Caption <small>Cormorant Garamond Italic · 19</small></div>
+        <p class="t-caption">Marija &amp; Stefan — Sremski Karlovci, late September</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═════════════════════════════════════════ BUTTONS -->
+  <section>
+    <div class="sec-head">
+      <div class="row" style="gap: var(--s-5);">
+        <span class="sec-no">03 / Action</span>
+        <h2>Buttons &amp; controls</h2>
+      </div>
+      <span class="sec-meta">flat — never rounded</span>
+    </div>
+
+    <div class="btn-grid">
+      <div class="btn-cell">
+        <span class="label">Primary — ink</span>
+        <div class="btn-row">
+          <button class="btn">Book a session <span class="arrow">→</span></button>
+          <button class="btn btn--small">View portfolio</button>
+          <button class="btn" disabled>Booked through 2026</button>
+        </div>
+      </div>
+
+      <div class="btn-cell">
+        <span class="label">Ghost — outlined</span>
+        <div class="btn-row">
+          <button class="btn btn--ghost">Read the journal <span class="arrow">→</span></button>
+          <button class="btn btn--ghost btn--small">Download price guide</button>
+        </div>
+      </div>
+
+      <div class="btn-cell">
+        <span class="label">Accent — walnut</span>
+        <div class="btn-row">
+          <button class="btn btn--wood">Check available dates <span class="arrow">→</span></button>
+          <button class="btn btn--wood btn--small">Reserve</button>
+        </div>
+      </div>
+
+      <div class="btn-cell">
+        <span class="label">Tertiary — text link</span>
+        <div class="btn-row">
+          <button class="btn btn--link">See all weddings →</button>
+          <button class="btn btn--link">Read Marija's full story →</button>
+        </div>
+      </div>
+
+      <div class="btn-cell">
+        <span class="label">Large CTA</span>
+        <div class="btn-row">
+          <button class="btn btn--lg">Plan your day with me <span class="arrow">→</span></button>
+        </div>
+      </div>
+
+      <div class="btn-cell">
+        <span class="label">Icon controls</span>
+        <div class="btn-row">
+          <button class="iconbtn" aria-label="Previous">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M11 3 L5 9 L11 15"/></svg>
+          </button>
+          <button class="iconbtn" aria-label="Next">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M7 3 L13 9 L7 15"/></svg>
+          </button>
+          <button class="iconbtn" aria-label="Save">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 3 H14 V15 L9 12 L4 15 Z"/></svg>
+          </button>
+          <button class="iconbtn" aria-label="Menu">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M3 5 H15 M3 9 H15 M3 13 H15"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top: var(--s-6);">
+      <div class="t-eyebrow" style="margin-bottom: var(--s-3);">Filter pills — used in galleries</div>
+      <div class="pills">
+        <button class="pill active">All work</button>
+        <button class="pill">Weddings</button>
+        <button class="pill">Engagements</button>
+        <button class="pill">Editorial</button>
+        <button class="pill">Fine art</button>
+        <button class="pill pill--wood">2025 ·  new</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════════════════════════════════════ FORMS -->
+  <section>
+    <div class="sec-head">
+      <div class="row" style="gap: var(--s-5);">
+        <span class="sec-no">04 / Input</span>
+        <h2>Forms</h2>
+      </div>
+      <span class="sec-meta">underline-only — no boxed inputs</span>
+    </div>
+
+    <div class="form-grid">
+      <div class="field">
+        <label>Your name</label>
+        <input type="text" placeholder="Marija Jovanović" />
+      </div>
+      <div class="field">
+        <label>Email</label>
+        <input type="email" placeholder="marija@example.com" />
+      </div>
+      <div class="field">
+        <label>Event date</label>
+        <input type="text" placeholder="14 June 2026" />
+      </div>
+      <div class="field">
+        <label>Venue / location</label>
+        <input type="text" placeholder="Sremski Karlovci, Serbia" />
+      </div>
+      <div class="field" style="grid-column: 1 / -1;">
+        <label>Tell me about the day</label>
+        <textarea placeholder="Two ceremonies, dinner at a vineyard, dancing until dawn…"></textarea>
+      </div>
+    </div>
+
+    <div class="btn-row" style="margin-top: var(--s-5);">
+      <button class="btn">Send enquiry <span class="arrow">→</span></button>
+      <button class="btn btn--link">Or email me directly →</button>
+    </div>
+  </section>
+
+  <!-- ═════════════════════════════════════════ SPACING -->
+  <section>
+    <div class="sec-head">
+      <div class="row" style="gap: var(--s-5);">
+        <span class="sec-no">05 / Rhythm</span>
+        <h2>Spacing</h2>
+      </div>
+      <span class="sec-meta">8pt base, sparse and breathy</span>
+    </div>
+
+    <div class="scale">
+      <div class="scale-row"><span class="name">s-1</span><span class="px">4px</span><div class="scale-bar" style="width: 4px;"></div></div>
+      <div class="scale-row"><span class="name">s-2</span><span class="px">8px</span><div class="scale-bar" style="width: 8px;"></div></div>
+      <div class="scale-row"><span class="name">s-3</span><span class="px">12px</span><div class="scale-bar" style="width: 12px;"></div></div>
+      <div class="scale-row"><span class="name">s-4</span><span class="px">16px</span><div class="scale-bar" style="width: 16px;"></div></div>
+      <div class="scale-row"><span class="name">s-5</span><span class="px">24px</span><div class="scale-bar" style="width: 24px;"></div></div>
+      <div class="scale-row"><span class="name">s-6</span><span class="px">32px</span><div class="scale-bar" style="width: 32px;"></div></div>
+      <div class="scale-row"><span class="name">s-7</span><span class="px">48px</span><div class="scale-bar" style="width: 48px;"></div></div>
+      <div class="scale-row"><span class="name">s-8</span><span class="px">64px</span><div class="scale-bar" style="width: 64px;"></div></div>
+      <div class="scale-row"><span class="name">s-9</span><span class="px">96px</span><div class="scale-bar" style="width: 96px;"></div></div>
+      <div class="scale-row"><span class="name">s-10</span><span class="px">128px</span><div class="scale-bar" style="width: 128px;"></div></div>
+    </div>
+  </section>
+
+  <!-- ═════════════════════════════════════════ COMPOSITION -->
+  <section>
+    <div class="sec-head">
+      <div class="row" style="gap: var(--s-5);">
+        <span class="sec-no">06 / In use</span>
+        <h2>Sample composition</h2>
+      </div>
+      <span class="sec-meta">how it all sits together</span>
+    </div>
+
+    <div class="composition">
+      <nav class="nav">
+        <div class="nav-l">
+          <a href="#" class="active">Portfolio</a>
+          <a href="#">Weddings</a>
+          <a href="#">Fine Art</a>
+        </div>
+        <div class="nav-mark">Gardinovački</div>
+        <div class="nav-r">
+          <a href="#">Journal</a>
+          <a href="#">Studio</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+
+      <div class="hero">
+        <div>
+          <div class="eyebrow">Now booking — Spring &amp; Autumn 2026</div>
+          <h3>The day, <em>remembered</em> in light.</h3>
+          <p>Wedding and fine-art photography out of Belgrade. Quiet, available-light work for couples who don't want a production around them — just the day, kept honestly, for the rest of their lives.</p>
+          <div class="ctas">
+            <button class="btn">Check my dates <span class="arrow">→</span></button>
+            <button class="btn btn--ghost">See recent work</button>
+          </div>
+        </div>
+        <div class="hero-img"></div>
+      </div>
+
+      <div class="gallery">
+        <div class="ph">
+          <span class="ph-meta">001 / Wedding</span>
+          <span class="ph-label">Ana &amp; Luka — Vinča</span>
+        </div>
+        <div class="ph">
+          <span class="ph-meta">002 / Editorial</span>
+          <span class="ph-label">Editorial — Vogue Adria</span>
+        </div>
+        <div class="ph">
+          <span class="ph-meta">003 / Fine art</span>
+          <span class="ph-label">Studies in Light, n°4</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════════════════════════════════════ FOOTER -->
+  <footer class="end">
+    <span class="mark">Gardinovački</span>
+    <span class="meta">Style guide · v0.2 · Belgrade</span>
+  </footer>
+
+</main>
+</body>
+</html>

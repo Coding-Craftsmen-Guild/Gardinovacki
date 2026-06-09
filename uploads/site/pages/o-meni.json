@@ -1,0 +1,103 @@
+{
+  "path": "/o-meni/",
+  "template": "T7-about-me",
+  "lang": "sr",
+  "meta": {
+    "title": "O meni — Gardinovački",
+    "description": "Ćao, ja sam Svetozar — fotograf venčanja i fine art fotografije iz Srbije.",
+    "ogImage": "https://gardinovacki.com/wp-content/uploads/2020/04/Svetozar-Gardinovacki.jpg",
+    "canonical": "/o-meni/"
+  },
+  "sections": [
+    {
+      "component": "standard-banner",
+      "props": {
+        "backgroundImage": {
+          "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Svetozar-Gardinovacki.jpg",
+          "alt": "Svetozar Gardinovački"
+        },
+        "title": "O meni",
+        "breadcrumbs": [
+          {
+            "label": "Početna",
+            "url": "/"
+          },
+          {
+            "label": "O meni",
+            "url": ""
+          }
+        ]
+      }
+    },
+    {
+      "component": "intro-text",
+      "props": {
+        "body": [
+          "Ćao, ja sam Svetozar, a vi ste verovatno došli na ovaj sajt kako biste videli moje fotografije. Ali hajde, kad ste već ovde, da čujete moju priču.",
+          "Fotografijom se bavim više godina, od svojih studentskih dana, ali i dalje sam ubeđen da se fotografija ne može nikada naučiti i savladati u potpunosti, te da svakog dana, gde god i šta god fotografisao, zapravo učim još jednu dragocenu lekciju.",
+          "Jedna od omiljenih rečenica koju sam čuo na početku svoje karijere fotografa glasi: „Za sve u životu postoji druga šansa, osim za prvi put\". Kao fotograf, u ovoj rečenici sam pronašao neizmernu motivaciju da konstantno tražim najbolji ugao iz kojeg se vidi taj „prvi put\" — bio to prvi poljubac, prvi osmeh, prvi zagrljaj.",
+          "Svojom kamerom se trudim da važne i neponovljive trenutke sa vama u glavnoj ulozi zabeležim na način na koji će taj trenutak dobiti neku novu, unikatnu dimenziju. Zahvaljujući sjajnom timu ljudi koji me okružuju, u mogućnosti smo da zadovoljimo skoro sve potrebe naših klijenata — bilo da su u pitanju intimna venčanja sa nekoliko vama najbližih ljudi, pa sve do masovnih višednevnih proslava na različitim lokacijama.",
+          "Toliko o meni. Ostatak priče će vam moje fotografije ispričati, a ja bih voleo da čujem nešto i od vas."
+        ],
+        "heading": "Svetozar Gardinovački",
+        "image": {
+          "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Svetozar-Gardinovacki.jpg",
+          "alt": "Svetozar Gardinovački",
+          "position": "right"
+        },
+        "cta": {
+          "label": "Javite mi se",
+          "url": "/kontakt/",
+          "variant": "primary"
+        }
+      }
+    },
+    {
+      "component": "cards",
+      "props": {
+        "heading": "Šta mogu da uradim za vas",
+        "variant": "services",
+        "cards": [
+          {
+            "image": "https://gardinovacki.com/wp-content/uploads/2020/05/gold-paket-web.jpg",
+            "alt": "Venčanja",
+            "title": "Venčanja",
+            "description": "Od priprema do prvog plesa.",
+            "cta": {
+              "label": "Istraži",
+              "url": "/usluge/vencanja/",
+              "variant": "primary"
+            }
+          },
+          {
+            "image": "https://gardinovacki.com/wp-content/uploads/2020/04/Vida13-scaled.jpg",
+            "alt": "Rođendani i ostalo",
+            "title": "Rođendani i ostalo",
+            "description": "Krštenja, slave, intimne porodične proslave.",
+            "cta": {
+              "label": "Istraži",
+              "url": "/usluge/rodjendani-i-ostalo/",
+              "variant": "primary"
+            }
+          },
+          {
+            "image": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_7049-scaled.jpg",
+            "alt": "Video",
+            "title": "Video",
+            "description": "Filmovi i kratki spotovi.",
+            "cta": {
+              "label": "Istraži",
+              "url": "/usluge/video/",
+              "variant": "primary"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "globalSections": [
+    "header",
+    "contact-form-section",
+    "footer"
+  ]
+}

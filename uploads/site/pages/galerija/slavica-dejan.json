@@ -1,0 +1,125 @@
+{
+  "path": "/galerija/slavica-dejan/",
+  "template": "T4-gallery",
+  "lang": "sr",
+  "meta": {
+    "title": "Slavica & Dejan — Galerija",
+    "description": "Fotografije iz galerije Slavica & Dejan.",
+    "ogImage": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_9451-scaled.jpg",
+    "canonical": "/galerija/slavica-dejan/"
+  },
+  "sections": [
+    {
+      "component": "standard-banner",
+      "props": {
+        "backgroundImage": {
+          "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_9451-scaled.jpg",
+          "alt": "Slavica & Dejan"
+        },
+        "title": "Slavica & Dejan",
+        "breadcrumbs": [
+          {
+            "label": "Početna",
+            "url": "/"
+          },
+          {
+            "label": "Galerija",
+            "url": "/galerija/tijana-luka/"
+          },
+          {
+            "label": "Slavica & Dejan",
+            "url": ""
+          }
+        ]
+      }
+    },
+    {
+      "component": "media-gallery",
+      "props": {
+        "layout": "masonry",
+        "items": [
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_9451-scaled.jpg",
+            "alt": "Slavica & Dejan — 1"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_9454-scaled.jpg",
+            "alt": "Slavica & Dejan — 2"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_9459-scaled.jpg",
+            "alt": "Slavica & Dejan — 3"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_9486-scaled.jpg",
+            "alt": "Slavica & Dejan — 4"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_9517-scaled.jpg",
+            "alt": "Slavica & Dejan — 5"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_9569-scaled.jpg",
+            "alt": "Slavica & Dejan — 6"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_9588-scaled.jpg",
+            "alt": "Slavica & Dejan — 7"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_9593-scaled.jpg",
+            "alt": "Slavica & Dejan — 8"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_9606-scaled.jpg",
+            "alt": "Slavica & Dejan — 9"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_9631-scaled.jpg",
+            "alt": "Slavica & Dejan — 10"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_9635-scaled.jpg",
+            "alt": "Slavica & Dejan — 11"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_9637-scaled.jpg",
+            "alt": "Slavica & Dejan — 12"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_9640-scaled.jpg",
+            "alt": "Slavica & Dejan — 13"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_9675-scaled.jpg",
+            "alt": "Slavica & Dejan — 14"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_9683-scaled.jpg",
+            "alt": "Slavica & Dejan — 15"
+          }
+        ]
+      }
+    }
+  ],
+  "globalSections": [
+    "header",
+    "contact-form-section",
+    "footer"
+  ]
+}

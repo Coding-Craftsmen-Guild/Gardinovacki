@@ -1,0 +1,125 @@
+{
+  "path": "/galerija/nevena-miroslav/",
+  "template": "T4-gallery",
+  "lang": "sr",
+  "meta": {
+    "title": "Nevena & Miroslav — Galerija",
+    "description": "Fotografije iz galerije Nevena & Miroslav.",
+    "ogImage": "https://gardinovacki.com/wp-content/uploads/2020/04/Nevena-Miroslav1-scaled.jpg",
+    "canonical": "/galerija/nevena-miroslav/"
+  },
+  "sections": [
+    {
+      "component": "standard-banner",
+      "props": {
+        "backgroundImage": {
+          "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Nevena-Miroslav1-scaled.jpg",
+          "alt": "Nevena & Miroslav"
+        },
+        "title": "Nevena & Miroslav",
+        "breadcrumbs": [
+          {
+            "label": "Početna",
+            "url": "/"
+          },
+          {
+            "label": "Galerija",
+            "url": "/galerija/tijana-luka/"
+          },
+          {
+            "label": "Nevena & Miroslav",
+            "url": ""
+          }
+        ]
+      }
+    },
+    {
+      "component": "media-gallery",
+      "props": {
+        "layout": "masonry",
+        "items": [
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Nevena-Miroslav1-scaled.jpg",
+            "alt": "Nevena & Miroslav — 1"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Nevena-Miroslav2-scaled.jpg",
+            "alt": "Nevena & Miroslav — 2"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Nevena-Miroslav3-scaled.jpg",
+            "alt": "Nevena & Miroslav — 3"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Nevena-Miroslav4-scaled.jpg",
+            "alt": "Nevena & Miroslav — 4"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Nevena-Miroslav5-scaled.jpg",
+            "alt": "Nevena & Miroslav — 5"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Nevena-Miroslav6-scaled.jpg",
+            "alt": "Nevena & Miroslav — 6"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Nevena-Miroslav7-scaled.jpg",
+            "alt": "Nevena & Miroslav — 7"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Nevena-Miroslav8-scaled.jpg",
+            "alt": "Nevena & Miroslav — 8"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Nevena-Miroslav9-scaled.jpg",
+            "alt": "Nevena & Miroslav — 9"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Nevena-Miroslav10-scaled.jpg",
+            "alt": "Nevena & Miroslav — 10"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Nevena-Miroslav11-scaled.jpg",
+            "alt": "Nevena & Miroslav — 11"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Nevena-Miroslav12-scaled.jpg",
+            "alt": "Nevena & Miroslav — 12"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Nevena-Miroslav13-scaled.jpg",
+            "alt": "Nevena & Miroslav — 13"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Nevena-Miroslav14-scaled.jpg",
+            "alt": "Nevena & Miroslav — 14"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Nevena-Miroslav15-scaled.jpg",
+            "alt": "Nevena & Miroslav — 15"
+          }
+        ]
+      }
+    }
+  ],
+  "globalSections": [
+    "header",
+    "contact-form-section",
+    "footer"
+  ]
+}

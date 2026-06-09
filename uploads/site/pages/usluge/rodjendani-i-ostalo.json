@@ -1,0 +1,142 @@
+{
+  "path": "/usluge/rodjendani-i-ostalo/",
+  "template": "T3-service",
+  "lang": "sr",
+  "meta": {
+    "title": "Rođendani i ostalo — Gardinovački",
+    "description": "Krštenja, rođendani, slave i intimne porodične proslave.",
+    "ogImage": "https://gardinovacki.com/wp-content/uploads/2020/04/Sitedemo.jpg",
+    "canonical": "/usluge/rodjendani-i-ostalo/"
+  },
+  "sections": [
+    {
+      "component": "standard-banner",
+      "props": {
+        "backgroundImage": {
+          "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Vida34-1024x683.jpg",
+          "alt": "Sa rođendanske proslave"
+        },
+        "title": "Rođendani i ostalo",
+        "subtitle": "Sve što se ne uklapa pod \"venčanje\" — i zaslužuje da se zapamti",
+        "breadcrumbs": [
+          {
+            "label": "Početna",
+            "url": "/"
+          },
+          {
+            "label": "Usluge",
+            "url": "/usluge/"
+          },
+          {
+            "label": "Rođendani i ostalo",
+            "url": ""
+          }
+        ]
+      }
+    },
+    {
+      "component": "intro-text",
+      "props": {
+        "body": [
+          "Krštenja, prvi rođendani, slave, godišnjice — kratko su, brzo prolaze, a kasnije se ne ponavljaju. Fotografije pomažu da se ne zaborave detalji i emocija.",
+          "Stil je isti kao i kod venčanja: bez režije, sa fokusom na ljudima."
+        ],
+        "heading": "Porodična okupljanja zaslužuju isti pristup"
+      }
+    },
+    {
+      "component": "media-gallery",
+      "props": {
+        "heading": "Iz portfolija",
+        "layout": "grid",
+        "items": [
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/05/Spi-Georg11-1024x683.jpg",
+            "alt": "Spi & Georg",
+            "title": "Spi & Georg",
+            "cta": {
+              "label": "Pogledaj galeriju",
+              "url": "/galerija/spi-georg/"
+            }
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/05/Kriss9-1024x683.jpg",
+            "alt": "Kriss",
+            "title": "Kriss",
+            "cta": {
+              "label": "Pogledaj galeriju",
+              "url": "/galerija/kriss/"
+            }
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Vojin3-1024x683.jpg",
+            "alt": "Vojin",
+            "title": "Vojin",
+            "cta": {
+              "label": "Pogledaj galeriju",
+              "url": "/galerija/vojin/"
+            }
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Vida34-1024x683.jpg",
+            "alt": "Vida",
+            "title": "Vida",
+            "cta": {
+              "label": "Pogledaj galeriju",
+              "url": "/galerija/vida/"
+            }
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Uros26-1024x683.jpg",
+            "alt": "Uroš",
+            "title": "Uroš",
+            "cta": {
+              "label": "Pogledaj galeriju",
+              "url": "/galerija/uros/"
+            }
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Una14-1024x683.jpg",
+            "alt": "Una",
+            "title": "Una",
+            "cta": {
+              "label": "Pogledaj galeriju",
+              "url": "/galerija/una/"
+            }
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Mateja26-1024x683.jpg",
+            "alt": "Mateja",
+            "title": "Mateja",
+            "cta": {
+              "label": "Pogledaj galeriju",
+              "url": "/galerija/mateja/"
+            }
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Dunja19-1024x683.jpg",
+            "alt": "Dunja",
+            "title": "Dunja",
+            "cta": {
+              "label": "Pogledaj galeriju",
+              "url": "/galerija/dunja/"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "globalSections": [
+    "header",
+    "contact-form-section",
+    "footer"
+  ]
+}

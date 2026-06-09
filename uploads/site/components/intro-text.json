@@ -1,0 +1,36 @@
+{
+  "componentType": "intro-text",
+  "description": "Centered text section with an optional heading, one or more paragraphs, an optional supporting image, and an optional CTA. Used as the introduction block on most pages.",
+  "props": {
+    "heading": { "type": "string", "required": false },
+    "body": {
+      "type": "array",
+      "required": true,
+      "minItems": 1,
+      "item": "string (paragraph)"
+    },
+    "image": {
+      "type": "object",
+      "required": false,
+      "shape": { "src": "string (URL)", "alt": "string", "position": "left | right | top" }
+    },
+    "cta": {
+      "type": "object",
+      "required": false,
+      "shape": { "label": "string", "url": "string", "variant": "primary | secondary" }
+    }
+  },
+  "example": {
+    "heading": "Ćao, dobrodošli na moj sajt!",
+    "body": [
+      "Kao fine-art fotograf, trudim se da pomognem ljudima da sačuvaju uspomene na svoje posebne trenutke, bilo to venčanje, veridba ili porodični trenuci sa voljenima.",
+      "Hajde da napravimo fotografije koje će pričati priče i ispuniti vaše srce emocijama u predstojećim godinama…"
+    ],
+    "image": {
+      "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Svetozar-Gardinovacki.jpg",
+      "alt": "Svetozar Gardinovački",
+      "position": "right"
+    },
+    "cta": { "label": "Pročitaj više", "url": "/o-meni/", "variant": "primary" }
+  }
+}

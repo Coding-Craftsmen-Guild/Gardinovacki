@@ -1,0 +1,125 @@
+{
+  "path": "/galerija/mirjana-ivan/",
+  "template": "T4-gallery",
+  "lang": "sr",
+  "meta": {
+    "title": "Mirjana & Ivan — Galerija",
+    "description": "Fotografije iz galerije Mirjana & Ivan.",
+    "ogImage": "https://gardinovacki.com/wp-content/uploads/2020/04/Mirjana-Ivan1-scaled.jpg",
+    "canonical": "/galerija/mirjana-ivan/"
+  },
+  "sections": [
+    {
+      "component": "standard-banner",
+      "props": {
+        "backgroundImage": {
+          "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Mirjana-Ivan1-scaled.jpg",
+          "alt": "Mirjana & Ivan"
+        },
+        "title": "Mirjana & Ivan",
+        "breadcrumbs": [
+          {
+            "label": "Početna",
+            "url": "/"
+          },
+          {
+            "label": "Galerija",
+            "url": "/galerija/tijana-luka/"
+          },
+          {
+            "label": "Mirjana & Ivan",
+            "url": ""
+          }
+        ]
+      }
+    },
+    {
+      "component": "media-gallery",
+      "props": {
+        "layout": "masonry",
+        "items": [
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Mirjana-Ivan1-scaled.jpg",
+            "alt": "Mirjana & Ivan — 1"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Mirjana-Ivan2-scaled.jpg",
+            "alt": "Mirjana & Ivan — 2"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Mirjana-Ivan3-scaled.jpg",
+            "alt": "Mirjana & Ivan — 3"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Mirjana-Ivan4-scaled.jpg",
+            "alt": "Mirjana & Ivan — 4"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Mirjana-Ivan5-scaled.jpg",
+            "alt": "Mirjana & Ivan — 5"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Mirjana-Ivan6-scaled.jpg",
+            "alt": "Mirjana & Ivan — 6"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Mirjana-Ivan7-scaled.jpg",
+            "alt": "Mirjana & Ivan — 7"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Mirjana-Ivan8-scaled.jpg",
+            "alt": "Mirjana & Ivan — 8"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Mirjana-Ivan9-scaled.jpg",
+            "alt": "Mirjana & Ivan — 9"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Mirjana-Ivan10-scaled.jpg",
+            "alt": "Mirjana & Ivan — 10"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Mirjana-Ivan11-scaled.jpg",
+            "alt": "Mirjana & Ivan — 11"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Mirjana-Ivan12-scaled.jpg",
+            "alt": "Mirjana & Ivan — 12"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Mirjana-Ivan13-scaled.jpg",
+            "alt": "Mirjana & Ivan — 13"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Mirjana-Ivan14-scaled.jpg",
+            "alt": "Mirjana & Ivan — 14"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Mirjana-Ivan15-scaled.jpg",
+            "alt": "Mirjana & Ivan — 15"
+          }
+        ]
+      }
+    }
+  ],
+  "globalSections": [
+    "header",
+    "contact-form-section",
+    "footer"
+  ]
+}

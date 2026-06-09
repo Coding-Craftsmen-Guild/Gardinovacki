@@ -1,0 +1,132 @@
+{
+  "generated": "2026-05-22T12:51:39.801Z",
+  "lang": "sr",
+  "totalPages": 23,
+  "byTemplate": {
+    "T1-homepage": 1,
+    "T2-services-landing": 1,
+    "T3-service": 3,
+    "T4-gallery": 10,
+    "T5-packages-landing": 1,
+    "T6-package": 5,
+    "T7-about-me": 1,
+    "T8-contact": 1
+  },
+  "pages": [
+    {
+      "path": "/",
+      "template": "T1-homepage",
+      "file": "pages/home.json"
+    },
+    {
+      "path": "/usluge/",
+      "template": "T2-services-landing",
+      "file": "pages/usluge.json"
+    },
+    {
+      "path": "/usluge/vencanja/",
+      "template": "T3-service",
+      "file": "pages/usluge/vencanja.json"
+    },
+    {
+      "path": "/usluge/rodjendani-i-ostalo/",
+      "template": "T3-service",
+      "file": "pages/usluge/rodjendani-i-ostalo.json"
+    },
+    {
+      "path": "/usluge/video/",
+      "template": "T3-service",
+      "file": "pages/usluge/video.json"
+    },
+    {
+      "path": "/galerija/tijana-luka/",
+      "template": "T4-gallery",
+      "file": "pages/galerija/tijana-luka.json"
+    },
+    {
+      "path": "/galerija/aleksandar-jovana/",
+      "template": "T4-gallery",
+      "file": "pages/galerija/aleksandar-jovana.json"
+    },
+    {
+      "path": "/galerija/anica-miroslav/",
+      "template": "T4-gallery",
+      "file": "pages/galerija/anica-miroslav.json"
+    },
+    {
+      "path": "/galerija/kristina-zoran/",
+      "template": "T4-gallery",
+      "file": "pages/galerija/kristina-zoran.json"
+    },
+    {
+      "path": "/galerija/milica-srdan/",
+      "template": "T4-gallery",
+      "file": "pages/galerija/milica-srdan.json"
+    },
+    {
+      "path": "/galerija/slavica-dejan/",
+      "template": "T4-gallery",
+      "file": "pages/galerija/slavica-dejan.json"
+    },
+    {
+      "path": "/galerija/sanja-bojan/",
+      "template": "T4-gallery",
+      "file": "pages/galerija/sanja-bojan.json"
+    },
+    {
+      "path": "/galerija/mirjana-ivan/",
+      "template": "T4-gallery",
+      "file": "pages/galerija/mirjana-ivan.json"
+    },
+    {
+      "path": "/galerija/nevena-miroslav/",
+      "template": "T4-gallery",
+      "file": "pages/galerija/nevena-miroslav.json"
+    },
+    {
+      "path": "/galerija/marina-veljko/",
+      "template": "T4-gallery",
+      "file": "pages/galerija/marina-veljko.json"
+    },
+    {
+      "path": "/paketi/",
+      "template": "T5-packages-landing",
+      "file": "pages/paketi.json"
+    },
+    {
+      "path": "/paketi/family/",
+      "template": "T6-package",
+      "file": "pages/paketi/family.json"
+    },
+    {
+      "path": "/paketi/platinum/",
+      "template": "T6-package",
+      "file": "pages/paketi/platinum.json"
+    },
+    {
+      "path": "/paketi/gold/",
+      "template": "T6-package",
+      "file": "pages/paketi/gold.json"
+    },
+    {
+      "path": "/paketi/silver/",
+      "template": "T6-package",
+      "file": "pages/paketi/silver.json"
+    },
+    {
+      "path": "/paketi/mini/",
+      "template": "T6-package",
+      "file": "pages/paketi/mini.json"
+    },
+    {
+      "path": "/o-meni/",
+      "template": "T7-about-me",
+      "file": "pages/o-meni.json"
+    },
+    {
+      "path": "/kontakt/",
+      "template": "T8-contact",
+      "file": "pages/kontakt.json"
+    }
+  ]
+}

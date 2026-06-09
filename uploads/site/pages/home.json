@@ -1,0 +1,196 @@
+{
+  "path": "/",
+  "template": "T1-homepage",
+  "lang": "sr",
+  "meta": {
+    "title": "Gardinovački — Venčanja i fine art fotografija",
+    "description": "Fotograf venčanja i fine art fotografije iz Srbije. Sačuvajte najlepše trenutke vašeg najvažnijeg dana.",
+    "ogImage": "https://gardinovacki.com/wp-content/uploads/2020/04/Sitedemo.jpg",
+    "canonical": "/"
+  },
+  "sections": [
+    {
+      "component": "carousel-hero-banner",
+      "props": {
+        "slides": [
+          {
+            "image": "https://gardinovacki.com/wp-content/uploads/2020/04/IMG_4880-scaled.jpg",
+            "alt": "Mladenci u prirodi"
+          },
+          {
+            "image": "https://gardinovacki.com/wp-content/uploads/2020/04/IMG_7368_1-1-scaled.jpg",
+            "alt": "Detalj sa venčanja"
+          },
+          {
+            "image": "https://gardinovacki.com/wp-content/uploads/2020/04/IMG_9655_1_1-scaled.jpg",
+            "alt": "Portret mladenaca"
+          },
+          {
+            "image": "https://gardinovacki.com/wp-content/uploads/2020/04/sanjaigor.jpg",
+            "alt": "Sanja i Igor"
+          },
+          {
+            "image": "https://gardinovacki.com/wp-content/uploads/2020/04/IMG_4820-scaled.jpg",
+            "alt": "Mladenci u portretu"
+          }
+        ],
+        "headline": "Fotografije koje pričaju priče",
+        "intro": "Venčanja i fine-art fotografija iz Srbije — sačuvajmo najlepše trenutke vašeg najvažnijeg dana.",
+        "ctas": [
+          {
+            "label": "Istraži usluge",
+            "url": "/usluge/",
+            "variant": "primary"
+          },
+          {
+            "label": "Istraži pakete",
+            "url": "/paketi/",
+            "variant": "secondary"
+          }
+        ]
+      }
+    },
+    {
+      "component": "intro-text",
+      "props": {
+        "body": [
+          "Kao fine-art fotograf, trudim se da pomognem ljudima da sačuvaju uspomene na svoje posebne trenutke, bilo to venčanje, veridba ili porodični trenuci sa voljenima.",
+          "Hajde da napravimo fotografije koje će pričati priče i ispuniti vaše srce emocijama u predstojećim godinama…"
+        ],
+        "heading": "Ćao, dobrodošli na moj sajt!",
+        "image": {
+          "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Svetozar-Gardinovacki.jpg",
+          "alt": "Svetozar Gardinovački",
+          "position": "right"
+        },
+        "cta": {
+          "label": "Pročitaj više",
+          "url": "/o-meni/",
+          "variant": "primary"
+        }
+      }
+    },
+    {
+      "component": "cards",
+      "props": {
+        "heading": "Usluge",
+        "variant": "services",
+        "cards": [
+          {
+            "image": "https://gardinovacki.com/wp-content/uploads/2020/05/gold-paket-web.jpg",
+            "alt": "Venčanja",
+            "title": "Venčanja",
+            "description": "Fotografije koje hvataju emociju, ne pozu — od priprema do prvog plesa.",
+            "cta": {
+              "label": "Istraži",
+              "url": "/usluge/vencanja/",
+              "variant": "primary"
+            }
+          },
+          {
+            "image": "https://gardinovacki.com/wp-content/uploads/2020/04/Vida13-scaled.jpg",
+            "alt": "Rođendani i ostalo",
+            "title": "Rođendani i ostalo",
+            "description": "Porodice, krštenja, slave i intimne proslave — sva važna okupljanja.",
+            "cta": {
+              "label": "Istraži",
+              "url": "/usluge/rodjendani-i-ostalo/",
+              "variant": "primary"
+            }
+          },
+          {
+            "image": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_7049-scaled.jpg",
+            "alt": "Video",
+            "title": "Video",
+            "description": "Filmovi i kratki spotovi koji ožive vaš dan.",
+            "cta": {
+              "label": "Istraži",
+              "url": "/usluge/video/",
+              "variant": "primary"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "component": "cards",
+      "props": {
+        "heading": "Paketi",
+        "intro": "Izaberite paket koji najbolje odgovara vašem događaju.",
+        "variant": "packages",
+        "cards": [
+          {
+            "image": "https://gardinovacki.com/wp-content/uploads/2022/08/family-paket-1024x682.jpg",
+            "alt": "Paket Family",
+            "title": "Family",
+            "description": "Celodnevno fotografisanje i video snimanje, foto sesija drugog dana, 3×100 štampanih fotografija u drvenoj kutiji, online galerija, tri foto knjige, montaža spota i dugačkog filma.",
+            "cta": {
+              "label": "Pogledaj paket",
+              "url": "/paketi/family/",
+              "variant": "primary"
+            }
+          },
+          {
+            "image": "https://gardinovacki.com/wp-content/uploads/2020/05/platinum-paket-web-1024x683.jpg",
+            "alt": "Paket Platinum",
+            "title": "Platinum",
+            "description": "Celodnevno fotografisanje i video snimanje, foto sesija, 100 štampanih fotografija u drvenoj kutiji, online galerija, foto knjiga, montaža spota i dugačkog filma.",
+            "cta": {
+              "label": "Pogledaj paket",
+              "url": "/paketi/platinum/",
+              "variant": "primary"
+            }
+          },
+          {
+            "image": "https://gardinovacki.com/wp-content/uploads/2020/05/gold-paket-web-1024x683.jpg",
+            "alt": "Paket Gold",
+            "title": "Gold",
+            "description": "Celodnevno fotografisanje, foto sesija, 100 štampanih fotografija u drvenoj kutiji, online galerija, foto knjiga.",
+            "cta": {
+              "label": "Pogledaj paket",
+              "url": "/paketi/gold/",
+              "variant": "primary"
+            }
+          },
+          {
+            "image": "https://gardinovacki.com/wp-content/uploads/2020/05/silver-paket-web-1024x683.jpg",
+            "alt": "Paket Silver",
+            "title": "Silver",
+            "description": "Celodnevno fotografisanje, foto sesija istog dana, 100 štampanih fotografija u drvenoj kutiji, online galerija.",
+            "cta": {
+              "label": "Pogledaj paket",
+              "url": "/paketi/silver/",
+              "variant": "primary"
+            }
+          },
+          {
+            "image": "https://gardinovacki.com/wp-content/uploads/2022/08/mini-paket-1024x682.jpg",
+            "alt": "Paket Mini",
+            "title": "Mini",
+            "description": "Fotografisanje do 3 sata, online galerija sa studijski obrađenim fotografijama.",
+            "cta": {
+              "label": "Pogledaj paket",
+              "url": "/paketi/mini/",
+              "variant": "primary"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "component": "instagram-feed",
+      "props": {
+        "heading": "Poslednje sa instagrama",
+        "handle": "gardinovacki_weddings",
+        "postCount": 8,
+        "layout": "masonry",
+        "profileUrl": "https://www.instagram.com/gardinovacki_weddings/"
+      }
+    }
+  ],
+  "globalSections": [
+    "header",
+    "contact-form-section",
+    "footer"
+  ]
+}

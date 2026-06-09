@@ -1,0 +1,71 @@
+{
+  "description": "Shared component instances used by every page via the page's `globalSections` array. Each key is a globalSection name; the value is a fully-populated component instance ready to render.",
+  "header": {
+    "component": "header",
+    "props": {
+      "logo": {
+        "src": "https://gardinovacki.com/wp-content/uploads/2021/01/Gardinovacki-logo-transparent.png",
+        "alt": "Gardinovački",
+        "href": "/"
+      },
+      "navItems": [
+        { "label": "Početna",  "url": "/" },
+        { "label": "Usluge",   "url": "/usluge/" },
+        { "label": "Galerija", "url": "/galerija/tijana-luka/" },
+        { "label": "Paketi",   "url": "/paketi/" },
+        { "label": "O meni",   "url": "/o-meni/" },
+        { "label": "Kontakt",  "url": "/kontakt/" }
+      ],
+      "languageDropdown": {
+        "current": "sr",
+        "options": []
+      },
+      "socials": [
+        { "platform": "facebook",  "url": "https://www.facebook.com/GardinovackiWeddings/",   "label": "Facebook"  },
+        { "platform": "instagram", "url": "https://www.instagram.com/gardinovacki_weddings/", "label": "Instagram" },
+        { "platform": "tiktok",    "url": "https://www.tiktok.com/@gardinovacki",             "label": "TikTok"    }
+      ]
+    }
+  },
+  "footer": {
+    "component": "footer",
+    "props": {
+      "copyright": "© 2026 Gardinovački",
+      "socials": [
+        { "platform": "facebook",  "url": "https://www.facebook.com/GardinovackiWeddings/",   "label": "Facebook"  },
+        { "platform": "instagram", "url": "https://www.instagram.com/gardinovacki_weddings/", "label": "Instagram" },
+        { "platform": "tiktok",    "url": "https://www.tiktok.com/@gardinovacki",             "label": "TikTok"    }
+      ]
+    }
+  },
+  "contact-form-section": {
+    "component": "contact-form-section",
+    "props": {
+      "backgroundImage": {
+        "src": "https://gardinovacki.com/wp-content/uploads/2020/04/IMG_9655_1_1-scaled.jpg",
+        "alt": "Mladenci u prirodi"
+      },
+      "heading": "Imate pitanje?",
+      "intro": "Slobodno me pozovite ili pošaljite poruku — biće mi drago da čujem vašu priču.",
+      "contactDetails": {
+        "phone": "+381 60 5500858",
+        "phoneHref": "tel:+381605500858",
+        "email": "gardinovacki@hotmail.com",
+        "emailHref": "mailto:gardinovacki@hotmail.com"
+      },
+      "form": {
+        "action": "",
+        "method": "post",
+        "fields": [
+          { "name": "name",     "label": "Ime",                 "type": "text",     "placeholder": "Ime",                 "required": true  },
+          { "name": "email",    "label": "Email",               "type": "email",    "placeholder": "Email adresa",        "required": true  },
+          { "name": "date",     "label": "Datum venčanja",      "type": "date",     "placeholder": "Datum venčanja",      "required": false },
+          { "name": "location", "label": "Lokacija i mesto",    "type": "text",     "placeholder": "Lokacija i mesto",    "required": false },
+          { "name": "package",  "label": "Paket",               "type": "select",   "required": false, "options": ["Family", "Platinum", "Gold", "Silver", "Mini"] },
+          { "name": "message",  "label": "Dodatne informacije", "type": "textarea", "placeholder": "Dodatne informacije", "required": false }
+        ],
+        "submitLabel": "Pošalji"
+      }
+    }
+  }
+}

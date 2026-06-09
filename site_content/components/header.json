@@ -1,0 +1,57 @@
+{
+  "componentType": "header",
+  "description": "Simple sticky header with logo (links to home), main navigation, language dropdown, and social links. Used on every page via globals.",
+  "props": {
+    "logo": {
+      "type": "object",
+      "required": true,
+      "shape": {
+        "src": "string (image URL)",
+        "alt": "string",
+        "href": "string (link target, usually '/')"
+      }
+    },
+    "navItems": {
+      "type": "array",
+      "required": true,
+      "item": { "label": "string", "url": "string" }
+    },
+    "languageDropdown": {
+      "type": "object",
+      "required": true,
+      "shape": {
+        "current": "string (e.g. 'sr')",
+        "options": "array of { code: string, label: string, url: string } — may be empty when only one language is published"
+      }
+    },
+    "socials": {
+      "type": "array",
+      "required": true,
+      "item": { "platform": "facebook | instagram | tiktok", "url": "string", "label": "string" }
+    }
+  },
+  "example": {
+    "logo": {
+      "src": "https://gardinovacki.com/wp-content/uploads/2021/01/Gardinovacki-logo-transparent.png",
+      "alt": "Gardinovački",
+      "href": "/"
+    },
+    "navItems": [
+      { "label": "Početna",  "url": "/" },
+      { "label": "Usluge",   "url": "/usluge/" },
+      { "label": "Galerija", "url": "/galerija/" },
+      { "label": "Paketi",   "url": "/paketi/" },
+      { "label": "O meni",   "url": "/o-meni/" },
+      { "label": "Kontakt",  "url": "/kontakt/" }
+    ],
+    "languageDropdown": {
+      "current": "sr",
+      "options": []
+    },
+    "socials": [
+      { "platform": "facebook",  "url": "https://www.facebook.com/GardinovackiWeddings/",   "label": "Facebook"  },
+      { "platform": "instagram", "url": "https://www.instagram.com/gardinovacki_weddings/", "label": "Instagram" },
+      { "platform": "tiktok",    "url": "https://www.tiktok.com/@gardinovacki",             "label": "TikTok"    }
+    ]
+  }
+}

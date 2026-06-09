@@ -1,0 +1,50 @@
+{
+  "path": "/kontakt/",
+  "template": "T8-contact",
+  "lang": "sr",
+  "meta": {
+    "title": "Kontakt — Gardinovački",
+    "description": "Slobodno me pozovite ili pošaljite poruku — biće mi drago da čujem vašu priču.",
+    "ogImage": "https://gardinovacki.com/wp-content/uploads/2020/04/Sitedemo.jpg",
+    "canonical": "/kontakt/"
+  },
+  "sections": [
+    {
+      "component": "standard-banner",
+      "props": {
+        "backgroundImage": {
+          "src": "https://gardinovacki.com/wp-content/uploads/2020/04/IMG_4820-scaled.jpg",
+          "alt": "Mladenci u portretu"
+        },
+        "title": "Kontakt",
+        "subtitle": "Pišite mi, čujemo se ubrzo",
+        "breadcrumbs": [
+          {
+            "label": "Početna",
+            "url": "/"
+          },
+          {
+            "label": "Kontakt",
+            "url": ""
+          }
+        ]
+      }
+    },
+    {
+      "component": "intro-text",
+      "props": {
+        "body": [
+          "Telefon: 060 5500858",
+          "Email: gardinovacki@hotmail.com",
+          "Formu za upit nalazite niže — popunite što više možete (datum, lokacija, paket koji vas zanima) i odgovaram u roku od 24 časa."
+        ],
+        "heading": "Slobodno me pozovite"
+      }
+    }
+  ],
+  "globalSections": [
+    "header",
+    "contact-form-section",
+    "footer"
+  ]
+}

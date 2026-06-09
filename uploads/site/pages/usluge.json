@@ -1,0 +1,151 @@
+{
+  "path": "/usluge/",
+  "template": "T2-services-landing",
+  "lang": "sr",
+  "meta": {
+    "title": "Usluge — Gardinovački",
+    "description": "Venčanja, rođendani i ostali događaji, video — pregled svih fotografskih usluga.",
+    "ogImage": "https://gardinovacki.com/wp-content/uploads/2020/04/Sitedemo.jpg",
+    "canonical": "/usluge/"
+  },
+  "sections": [
+    {
+      "component": "standard-banner",
+      "props": {
+        "backgroundImage": {
+          "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_0716_1-COVER-1024x683.jpg",
+          "alt": "Detalj sa venčanja"
+        },
+        "title": "Usluge",
+        "subtitle": "Šta sve mogu da uradim za vaš dan",
+        "breadcrumbs": [
+          {
+            "label": "Početna",
+            "url": "/"
+          },
+          {
+            "label": "Usluge",
+            "url": ""
+          }
+        ]
+      }
+    },
+    {
+      "component": "intro-text",
+      "props": {
+        "body": [
+          "Od kamernih porodičnih okupljanja do velikih višednevnih venčanja — pristup je uvek isti: hvatam emociju, ne pozu.",
+          "Ispod su tri glavne usluge. Svaka ima posebnu stranicu sa primerima i detaljima."
+        ],
+        "heading": "Svaka priča zaslužuje da bude ispričana"
+      }
+    },
+    {
+      "component": "service-carousel-gallery",
+      "props": {
+        "heading": "Venčanja",
+        "intro": "Najsvežiji radovi iz portfolija venčanja.",
+        "images": [
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_8863-COVER_1-1024x683.jpg",
+            "alt": "Tijana i Luka"
+          },
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_1832-COVER_1-1024x683.jpg",
+            "alt": "Jovana i Aleksandar"
+          },
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/01/IMG_8809-COVER-1024x683.jpg",
+            "alt": "Anica i Miroslav"
+          },
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/cover-1024x683.jpg",
+            "alt": "Kristina i Zoran"
+          },
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Sanja-Bojan55-1024x597.jpg",
+            "alt": "Sanja i Bojan"
+          },
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Mirjana-Ivan41-1024x683.jpg",
+            "alt": "Mirjana i Ivan"
+          }
+        ],
+        "cta": {
+          "label": "Saznaj više o venčanjima",
+          "url": "/usluge/vencanja/",
+          "variant": "primary"
+        }
+      }
+    },
+    {
+      "component": "service-carousel-gallery",
+      "props": {
+        "heading": "Rođendani i ostalo",
+        "intro": "Krštenja, rođendani, slave i intimne porodične proslave.",
+        "images": [
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Vida34-1024x683.jpg",
+            "alt": "Vida"
+          },
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Uros26-1024x683.jpg",
+            "alt": "Uroš"
+          },
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Una14-1024x683.jpg",
+            "alt": "Una"
+          },
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Mateja26-1024x683.jpg",
+            "alt": "Mateja"
+          },
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Dunja19-1024x683.jpg",
+            "alt": "Dunja"
+          },
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/05/Spi-Georg11-1024x683.jpg",
+            "alt": "Spi & Georg"
+          }
+        ],
+        "cta": {
+          "label": "Saznaj više o rođendanima",
+          "url": "/usluge/rodjendani-i-ostalo/",
+          "variant": "primary"
+        }
+      }
+    },
+    {
+      "component": "service-carousel-gallery",
+      "props": {
+        "heading": "Video",
+        "intro": "Filmovi i kratki spotovi sa vaših događaja.",
+        "images": [
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_7049-scaled.jpg",
+            "alt": "Sa snimanja"
+          },
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/IMG_4880-scaled.jpg",
+            "alt": "Mladenci u prirodi"
+          },
+          {
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/IMG_4820-scaled.jpg",
+            "alt": "Mladenci u portretu"
+          }
+        ],
+        "cta": {
+          "label": "Saznaj više o videu",
+          "url": "/usluge/video/",
+          "variant": "primary"
+        }
+      }
+    }
+  ],
+  "globalSections": [
+    "header",
+    "contact-form-section",
+    "footer"
+  ]
+}

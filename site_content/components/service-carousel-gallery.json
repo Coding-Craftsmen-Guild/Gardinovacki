@@ -1,0 +1,33 @@
+{
+  "componentType": "service-carousel-gallery",
+  "description": "Inline horizontal carousel of images promoting a service (e.g., a few wedding photos with a 'see full gallery' button). Used on service pages (T3) and on the services landing (T2), and optionally on package detail pages (T6) to show example work.",
+  "props": {
+    "heading": { "type": "string", "required": false },
+    "intro":   { "type": "string", "required": false },
+    "images": {
+      "type": "array",
+      "required": true,
+      "minItems": 1,
+      "item": { "src": "string (URL)", "alt": "string" }
+    },
+    "cta": {
+      "type": "object",
+      "required": true,
+      "shape": { "label": "string", "url": "string", "variant": "primary | secondary" },
+      "note": "'See more' link to the full gallery page."
+    }
+  },
+  "example": {
+    "heading": "Venčanja",
+    "intro": "Nekoliko nedavnih venčanja iz portfolija.",
+    "images": [
+      { "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_8863-COVER_1-1024x683.jpg", "alt": "Tijana i Luka" },
+      { "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_1832-COVER_1-1024x683.jpg", "alt": "Jovana i Aleksandar" },
+      { "src": "https://gardinovacki.com/wp-content/uploads/2023/01/IMG_8809-COVER-1024x683.jpg",   "alt": "Anica i Miroslav" },
+      { "src": "https://gardinovacki.com/wp-content/uploads/2021/02/cover-1024x683.jpg",            "alt": "Kristina i Zoran" },
+      { "src": "https://gardinovacki.com/wp-content/uploads/2020/05/cover-1-1024x683.jpg",          "alt": "Sanja i Bojan" },
+      { "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Mirjana-Ivan41-1024x683.jpg",   "alt": "Mirjana i Ivan" }
+    ],
+    "cta": { "label": "Pogledaj sve galerije", "url": "/galerija/tijana-luka/", "variant": "primary" }
+  }
+}

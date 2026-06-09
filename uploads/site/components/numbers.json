@@ -1,0 +1,29 @@
+{
+  "componentType": "numbers",
+  "description": "List of numbered/iconographic feature items. Used on package pages (T6) to show what's included in a package — each item has a number (1, 2, 3…) and a label, optionally a longer description.",
+  "props": {
+    "heading": { "type": "string", "required": false, "note": "e.g. 'Šta paket uključuje'" },
+    "intro":   { "type": "string", "required": false },
+    "items": {
+      "type": "array",
+      "required": true,
+      "minItems": 1,
+      "item": {
+        "number":      "string (display value, e.g. '01' or just text)",
+        "label":       "string (the feature itself)",
+        "description": "string (optional supporting detail)"
+      }
+    }
+  },
+  "example": {
+    "heading": "Šta paket uključuje",
+    "items": [
+      { "number": "01", "label": "Celodnevno fotografisanje i video snimanje" },
+      { "number": "02", "label": "Foto sesija istog ili drugog dana" },
+      { "number": "03", "label": "3 x 100 štampanih fotografija u drvenoj kutiji" },
+      { "number": "04", "label": "Online galerija sa studijski obrađenim fotografijama" },
+      { "number": "05", "label": "Izrada 3 foto knjige" },
+      { "number": "06", "label": "Montaža spota i dugačkog filma" }
+    ]
+  }
+}

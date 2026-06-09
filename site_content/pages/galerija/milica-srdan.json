@@ -1,0 +1,125 @@
+{
+  "path": "/galerija/milica-srdan/",
+  "template": "T4-gallery",
+  "lang": "sr",
+  "meta": {
+    "title": "Milica & Srđan — Galerija",
+    "description": "Fotografije iz galerije Milica & Srđan.",
+    "ogImage": "https://gardinovacki.com/wp-content/uploads/2021/02/cover-1-scaled.jpg",
+    "canonical": "/galerija/milica-srdan/"
+  },
+  "sections": [
+    {
+      "component": "standard-banner",
+      "props": {
+        "backgroundImage": {
+          "src": "https://gardinovacki.com/wp-content/uploads/2021/02/cover-1-scaled.jpg",
+          "alt": "Milica & Srđan"
+        },
+        "title": "Milica & Srđan",
+        "breadcrumbs": [
+          {
+            "label": "Početna",
+            "url": "/"
+          },
+          {
+            "label": "Galerija",
+            "url": "/galerija/tijana-luka/"
+          },
+          {
+            "label": "Milica & Srđan",
+            "url": ""
+          }
+        ]
+      }
+    },
+    {
+      "component": "media-gallery",
+      "props": {
+        "layout": "masonry",
+        "items": [
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/cover-1-scaled.jpg",
+            "alt": "Milica & Srđan — 1"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_6813-scaled.jpg",
+            "alt": "Milica & Srđan — 2"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_6825-scaled.jpg",
+            "alt": "Milica & Srđan — 3"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_6834-scaled.jpg",
+            "alt": "Milica & Srđan — 4"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_6836-scaled.jpg",
+            "alt": "Milica & Srđan — 5"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_6852-scaled.jpg",
+            "alt": "Milica & Srđan — 6"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_6857-scaled.jpg",
+            "alt": "Milica & Srđan — 7"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_6890-scaled.jpg",
+            "alt": "Milica & Srđan — 8"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_6892-scaled.jpg",
+            "alt": "Milica & Srđan — 9"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_6901-scaled.jpg",
+            "alt": "Milica & Srđan — 10"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_6964-scaled.jpg",
+            "alt": "Milica & Srđan — 11"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_6979-scaled.jpg",
+            "alt": "Milica & Srđan — 12"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_7003-scaled.jpg",
+            "alt": "Milica & Srđan — 13"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_7004-scaled.jpg",
+            "alt": "Milica & Srđan — 14"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2021/02/IMG_7033-scaled.jpg",
+            "alt": "Milica & Srđan — 15"
+          }
+        ]
+      }
+    }
+  ],
+  "globalSections": [
+    "header",
+    "contact-form-section",
+    "footer"
+  ]
+}

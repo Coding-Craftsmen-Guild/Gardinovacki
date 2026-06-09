@@ -1,0 +1,125 @@
+{
+  "path": "/galerija/marina-veljko/",
+  "template": "T4-gallery",
+  "lang": "sr",
+  "meta": {
+    "title": "Marina & Veljko — Galerija",
+    "description": "Fotografije iz galerije Marina & Veljko.",
+    "ogImage": "https://gardinovacki.com/wp-content/uploads/2020/04/Marina-Veljko1-scaled.jpg",
+    "canonical": "/galerija/marina-veljko/"
+  },
+  "sections": [
+    {
+      "component": "standard-banner",
+      "props": {
+        "backgroundImage": {
+          "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Marina-Veljko1-scaled.jpg",
+          "alt": "Marina & Veljko"
+        },
+        "title": "Marina & Veljko",
+        "breadcrumbs": [
+          {
+            "label": "Početna",
+            "url": "/"
+          },
+          {
+            "label": "Galerija",
+            "url": "/galerija/tijana-luka/"
+          },
+          {
+            "label": "Marina & Veljko",
+            "url": ""
+          }
+        ]
+      }
+    },
+    {
+      "component": "media-gallery",
+      "props": {
+        "layout": "masonry",
+        "items": [
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Marina-Veljko1-scaled.jpg",
+            "alt": "Marina & Veljko — 1"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Marina-Veljko2-scaled.jpg",
+            "alt": "Marina & Veljko — 2"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Marina-Veljko3-scaled.jpg",
+            "alt": "Marina & Veljko — 3"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Marina-Veljko4-scaled.jpg",
+            "alt": "Marina & Veljko — 4"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Marina-Veljko5-scaled.jpg",
+            "alt": "Marina & Veljko — 5"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Marina-Veljko6-scaled.jpg",
+            "alt": "Marina & Veljko — 6"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Marina-Veljko7-scaled.jpg",
+            "alt": "Marina & Veljko — 7"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Marina-Veljko8-scaled.jpg",
+            "alt": "Marina & Veljko — 8"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Marina-Veljko9-scaled.jpg",
+            "alt": "Marina & Veljko — 9"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Marina-Veljko10-scaled.jpg",
+            "alt": "Marina & Veljko — 10"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Marina-Veljko11-scaled.jpg",
+            "alt": "Marina & Veljko — 11"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Marina-Veljko12-scaled.jpg",
+            "alt": "Marina & Veljko — 12"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Marina-Veljko13-scaled.jpg",
+            "alt": "Marina & Veljko — 13"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Marina-Veljko14-scaled.jpg",
+            "alt": "Marina & Veljko — 14"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Marina-Veljko15-scaled.jpg",
+            "alt": "Marina & Veljko — 15"
+          }
+        ]
+      }
+    }
+  ],
+  "globalSections": [
+    "header",
+    "contact-form-section",
+    "footer"
+  ]
+}

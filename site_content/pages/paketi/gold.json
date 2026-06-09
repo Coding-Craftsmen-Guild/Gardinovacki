@@ -1,0 +1,84 @@
+{
+  "path": "/paketi/gold/",
+  "template": "T6-package",
+  "lang": "sr",
+  "meta": {
+    "title": "Paket Gold — Gardinovački",
+    "description": "Celodnevno fotografisanje, foto sesija, 100 štampanih fotografija u drvenoj kutiji, online galerija, foto knjiga.",
+    "ogImage": "https://gardinovacki.com/wp-content/uploads/2020/05/gold-paket-web-1024x683.jpg",
+    "canonical": "/paketi/gold/"
+  },
+  "sections": [
+    {
+      "component": "standard-banner",
+      "props": {
+        "backgroundImage": {
+          "src": "https://gardinovacki.com/wp-content/uploads/2020/05/gold-paket-web-1024x683.jpg",
+          "alt": "Paket Gold"
+        },
+        "title": "Gold",
+        "subtitle": "Celodnevne fotografije + foto knjiga",
+        "breadcrumbs": [
+          {
+            "label": "Početna",
+            "url": "/"
+          },
+          {
+            "label": "Paketi",
+            "url": "/paketi/"
+          },
+          {
+            "label": "Gold",
+            "url": ""
+          }
+        ]
+      }
+    },
+    {
+      "component": "media-showcase",
+      "props": {
+        "pretitle": "Paket Gold",
+        "heading": "Šta dobijate sa paketom Gold",
+        "intro": "Celodnevno fotografisanje, foto sesija, 100 štampanih fotografija u drvenoj kutiji, online galerija, foto knjiga.",
+        "filterable": false,
+        "lockedTags": [
+          "Venčanja"
+        ],
+        "pageSize": 6
+      }
+    },
+    {
+      "component": "numbers",
+      "props": {
+        "heading": "Šta paket uključuje",
+        "items": [
+          {
+            "number": "01",
+            "label": "Celodnevno fotografisanje"
+          },
+          {
+            "number": "02",
+            "label": "Foto sesija istog ili drugog dana"
+          },
+          {
+            "number": "03",
+            "label": "100 štampanih fotografija u drvenoj kutiji"
+          },
+          {
+            "number": "04",
+            "label": "Online galerija sa studijski obrađenim fotografijama"
+          },
+          {
+            "number": "05",
+            "label": "Izrada foto knjige"
+          }
+        ]
+      }
+    }
+  ],
+  "globalSections": [
+    "header",
+    "contact-form-section",
+    "footer"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "componentType": "contact-form-section",
+  "description": "Full-bleed section with a background image, headline, supporting text, and a contact form. Used as the bottom CTA on every page (configured once in globals.json).",
+  "props": {
+    "backgroundImage": {
+      "type": "object",
+      "required": true,
+      "shape": { "src": "string (URL)", "alt": "string" }
+    },
+    "heading": { "type": "string", "required": true },
+    "intro":   { "type": "string", "required": false },
+    "contactDetails": {
+      "type": "object",
+      "required": false,
+      "shape": {
+        "phone": "string (e.g. '+381 60 5500858')",
+        "phoneHref": "string (e.g. 'tel:+381605500858')",
+        "email": "string",
+        "emailHref": "string (e.g. 'mailto:gardinovacki@hotmail.com')"
+      }
+    },
+    "form": {
+      "type": "object",
+      "required": true,
+      "shape": {
+        "action": "string (form POST target; empty in spec, wired at runtime)",
+        "method": "string ('post' or 'get')",
+        "fields": "array of { name, label, type: 'text'|'email'|'tel'|'date'|'select'|'textarea', placeholder?, required?, options? }",
+        "submitLabel": "string"
+      }
+    }
+  },
+  "example": {
+    "backgroundImage": {
+      "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Sitedemo.jpg",
+      "alt": "Mladenci u prirodi"
+    },
+    "heading": "Imate pitanje?",
+    "intro": "Slobodno me pozovite ili pošaljite poruku — biće mi drago da čujem vašu priču.",
+    "contactDetails": {
+      "phone": "+381 60 5500858",
+      "phoneHref": "tel:+381605500858",
+      "email": "gardinovacki@hotmail.com",
+      "emailHref": "mailto:gardinovacki@hotmail.com"
+    },
+    "form": {
+      "action": "",
+      "method": "post",
+      "fields": [
+        { "name": "name",     "label": "Ime",                 "type": "text",     "placeholder": "Ime",                 "required": true  },
+        { "name": "email",    "label": "Email",               "type": "email",    "placeholder": "Email adresa",        "required": true  },
+        { "name": "date",     "label": "Datum venčanja",      "type": "date",     "placeholder": "Datum venčanja",      "required": false },
+        { "name": "location", "label": "Lokacija i mesto",    "type": "text",     "placeholder": "Lokacija i mesto",    "required": false },
+        { "name": "package",  "label": "Paket",               "type": "select",   "required": false, "options": ["Family", "Platinum", "Gold", "Silver", "Mini"] },
+        { "name": "message",  "label": "Dodatne informacije", "type": "textarea", "placeholder": "Dodatne informacije", "required": false }
+      ],
+      "submitLabel": "Pošalji"
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "path": "/galerija/anica-miroslav/",
+  "template": "T4-gallery",
+  "lang": "sr",
+  "meta": {
+    "title": "Anica & Miroslav — Galerija",
+    "description": "Fotografije iz galerije Anica & Miroslav.",
+    "ogImage": "https://gardinovacki.com/wp-content/uploads/2023/01/IMG_0004-scaled.jpg",
+    "canonical": "/galerija/anica-miroslav/"
+  },
+  "sections": [
+    {
+      "component": "standard-banner",
+      "props": {
+        "backgroundImage": {
+          "src": "https://gardinovacki.com/wp-content/uploads/2023/01/IMG_0004-scaled.jpg",
+          "alt": "Anica & Miroslav"
+        },
+        "title": "Anica & Miroslav",
+        "breadcrumbs": [
+          {
+            "label": "Početna",
+            "url": "/"
+          },
+          {
+            "label": "Galerija",
+            "url": "/galerija/tijana-luka/"
+          },
+          {
+            "label": "Anica & Miroslav",
+            "url": ""
+          }
+        ]
+      }
+    },
+    {
+      "component": "media-gallery",
+      "props": {
+        "layout": "masonry",
+        "items": [
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/01/IMG_0004-scaled.jpg",
+            "alt": "Anica & Miroslav — 1"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/01/IMG_0069-scaled.jpg",
+            "alt": "Anica & Miroslav — 2"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/01/IMG_0101-scaled.jpg",
+            "alt": "Anica & Miroslav — 3"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/01/IMG_0108-scaled.jpg",
+            "alt": "Anica & Miroslav — 4"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/01/IMG_0123-scaled.jpg",
+            "alt": "Anica & Miroslav — 5"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/01/IMG_0142-scaled.jpg",
+            "alt": "Anica & Miroslav — 6"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/01/IMG_0164-scaled.jpg",
+            "alt": "Anica & Miroslav — 7"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/01/IMG_0166-scaled.jpg",
+            "alt": "Anica & Miroslav — 8"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/01/IMG_0181-scaled.jpg",
+            "alt": "Anica & Miroslav — 9"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/01/IMG_0188-scaled.jpg",
+            "alt": "Anica & Miroslav — 10"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/01/IMG_0349-scaled.jpg",
+            "alt": "Anica & Miroslav — 11"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/01/IMG_0367-scaled.jpg",
+            "alt": "Anica & Miroslav — 12"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/01/IMG_0369-scaled.jpg",
+            "alt": "Anica & Miroslav — 13"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/01/IMG_0391-scaled.jpg",
+            "alt": "Anica & Miroslav — 14"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2023/01/IMG_0394-scaled.jpg",
+            "alt": "Anica & Miroslav — 15"
+          }
+        ]
+      }
+    }
+  ],
+  "globalSections": [
+    "header",
+    "contact-form-section",
+    "footer"
+  ]
+}

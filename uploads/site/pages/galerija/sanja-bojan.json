@@ -1,0 +1,125 @@
+{
+  "path": "/galerija/sanja-bojan/",
+  "template": "T4-gallery",
+  "lang": "sr",
+  "meta": {
+    "title": "Sanja & Bojan — Galerija",
+    "description": "Fotografije iz galerije Sanja & Bojan.",
+    "ogImage": "https://gardinovacki.com/wp-content/uploads/2020/04/Sanja-Bojan1-scaled.jpg",
+    "canonical": "/galerija/sanja-bojan/"
+  },
+  "sections": [
+    {
+      "component": "standard-banner",
+      "props": {
+        "backgroundImage": {
+          "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Sanja-Bojan1-scaled.jpg",
+          "alt": "Sanja & Bojan"
+        },
+        "title": "Sanja & Bojan",
+        "breadcrumbs": [
+          {
+            "label": "Početna",
+            "url": "/"
+          },
+          {
+            "label": "Galerija",
+            "url": "/galerija/tijana-luka/"
+          },
+          {
+            "label": "Sanja & Bojan",
+            "url": ""
+          }
+        ]
+      }
+    },
+    {
+      "component": "media-gallery",
+      "props": {
+        "layout": "masonry",
+        "items": [
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Sanja-Bojan1-scaled.jpg",
+            "alt": "Sanja & Bojan — 1"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Sanja-Bojan2-scaled.jpg",
+            "alt": "Sanja & Bojan — 2"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Sanja-Bojan3-scaled.jpg",
+            "alt": "Sanja & Bojan — 3"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Sanja-Bojan4-scaled.jpg",
+            "alt": "Sanja & Bojan — 4"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Sanja-Bojan5-scaled.jpg",
+            "alt": "Sanja & Bojan — 5"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Sanja-Bojan6-scaled.jpg",
+            "alt": "Sanja & Bojan — 6"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Sanja-Bojan7-scaled.jpg",
+            "alt": "Sanja & Bojan — 7"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Sanja-Bojan8-scaled.jpg",
+            "alt": "Sanja & Bojan — 8"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Sanja-Bojan9-scaled.jpg",
+            "alt": "Sanja & Bojan — 9"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Sanja-Bojan10-scaled.jpg",
+            "alt": "Sanja & Bojan — 10"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Sanja-Bojan11-scaled.jpg",
+            "alt": "Sanja & Bojan — 11"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Sanja-Bojan12-scaled.jpg",
+            "alt": "Sanja & Bojan — 12"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Sanja-Bojan13-scaled.jpg",
+            "alt": "Sanja & Bojan — 13"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Sanja-Bojan14-scaled.jpg",
+            "alt": "Sanja & Bojan — 14"
+          },
+          {
+            "type": "image",
+            "src": "https://gardinovacki.com/wp-content/uploads/2020/04/Sanja-Bojan15-scaled.jpg",
+            "alt": "Sanja & Bojan — 15"
+          }
+        ]
+      }
+    }
+  ],
+  "globalSections": [
+    "header",
+    "contact-form-section",
+    "footer"
+  ]
+}
