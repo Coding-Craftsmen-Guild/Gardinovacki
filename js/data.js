@@ -17,11 +17,6 @@ window.SITE_DATA = {
         "file": "pages/home.json"
       },
       {
-        "path": "/portfolio/",
-        "template": "T9-showcase",
-        "file": "(runtime)"
-      },
-      {
         "path": "/vencanja/",
         "template": "T9-showcase",
         "file": "(runtime)"
@@ -137,10 +132,6 @@ window.SITE_DATA = {
           {
             "label": "Početna",
             "url": "/"
-          },
-          {
-            "label": "Portfolio",
-            "url": "/portfolio/"
           },
           {
             "label": "Venčanja",
@@ -395,6 +386,36 @@ window.SITE_DATA = {
           }
         },
         {
+          "component": "awards",
+          "props": {
+            "title": "Nagrade",
+            "logos": [
+              { "label": "VOGUE" },
+              { "label": "ELLE" },
+              { "label": "JUNEBUG" },
+              { "label": "BAZAAR" },
+              { "label": "BRIDES" }
+            ]
+          }
+        },
+        {
+          "component": "masonry-wall",
+          "props": {
+            "initial": 8,
+            "step": 4,
+            "max": 20
+          }
+        },
+        {
+          "component": "cards",
+          "props": {
+            "variant": "stories",
+            "source": "galleries",
+            "pretitle": "Otkrijte",
+            "heading": "Priče"
+          }
+        },
+        {
           "component": "feature-banner",
           "props": {
             "height": "tall",
@@ -490,71 +511,6 @@ window.SITE_DATA = {
           }
         },
         {
-          "component": "cards",
-          "props": {
-            "heading": "Paketi",
-            "intro": "Izaberite paket koji najbolje odgovara vašem događaju.",
-            "variant": "packages",
-            "cards": [
-              {
-                "image": "https://gardinovacki.com/wp-content/uploads/2022/08/family-paket-1024x682.jpg",
-                "alt": "Paket Family",
-                "title": "Family",
-                "description": "Celodnevno fotografisanje i video snimanje, foto sesija drugog dana, 3×100 štampanih fotografija u drvenoj kutiji, online galerija, tri foto knjige, montaža spota i dugačkog filma.",
-                "cta": {
-                  "label": "Pogledaj paket",
-                  "url": "/paketi/family/",
-                  "variant": "primary"
-                }
-              },
-              {
-                "image": "https://gardinovacki.com/wp-content/uploads/2020/05/platinum-paket-web-1024x683.jpg",
-                "alt": "Paket Platinum",
-                "title": "Platinum",
-                "description": "Celodnevno fotografisanje i video snimanje, foto sesija, 100 štampanih fotografija u drvenoj kutiji, online galerija, foto knjiga, montaža spota i dugačkog filma.",
-                "cta": {
-                  "label": "Pogledaj paket",
-                  "url": "/paketi/platinum/",
-                  "variant": "primary"
-                }
-              },
-              {
-                "image": "https://gardinovacki.com/wp-content/uploads/2020/05/gold-paket-web-1024x683.jpg",
-                "alt": "Paket Gold",
-                "title": "Gold",
-                "description": "Celodnevno fotografisanje, foto sesija, 100 štampanih fotografija u drvenoj kutiji, online galerija, foto knjiga.",
-                "cta": {
-                  "label": "Pogledaj paket",
-                  "url": "/paketi/gold/",
-                  "variant": "primary"
-                }
-              },
-              {
-                "image": "https://gardinovacki.com/wp-content/uploads/2020/05/silver-paket-web-1024x683.jpg",
-                "alt": "Paket Silver",
-                "title": "Silver",
-                "description": "Celodnevno fotografisanje, foto sesija istog dana, 100 štampanih fotografija u drvenoj kutiji, online galerija.",
-                "cta": {
-                  "label": "Pogledaj paket",
-                  "url": "/paketi/silver/",
-                  "variant": "primary"
-                }
-              },
-              {
-                "image": "https://gardinovacki.com/wp-content/uploads/2022/08/mini-paket-1024x682.jpg",
-                "alt": "Paket Mini",
-                "title": "Mini",
-                "description": "Fotografisanje do 3 sata, online galerija sa studijski obrađenim fotografijama.",
-                "cta": {
-                  "label": "Pogledaj paket",
-                  "url": "/paketi/mini/",
-                  "variant": "primary"
-                }
-              }
-            ]
-          }
-        },
-        {
           "component": "instagram-feed",
           "props": {
             "heading": "Poslednje sa instagrama",
@@ -562,60 +518,6 @@ window.SITE_DATA = {
             "postCount": 8,
             "layout": "masonry",
             "profileUrl": "https://www.instagram.com/gardinovacki_weddings/"
-          }
-        }
-      ],
-      "globalSections": [
-        "header",
-        "contact-form-section",
-        "footer"
-      ]
-    },
-    {
-      "path": "/portfolio/",
-      "template": "T9-showcase",
-      "lang": "sr",
-      "meta": {
-        "title": "Portfolio — Gardinovački",
-        "description": "Fotografije, galerije i spotovi — filtrirajte po kategoriji.",
-        "ogImage": "https://gardinovacki.com/wp-content/uploads/2020/04/Sitedemo.jpg",
-        "canonical": "/portfolio/"
-      },
-      "sections": [
-        {
-          "component": "standard-banner",
-          "props": {
-            "backgroundImage": {
-              "src": "https://gardinovacki.com/wp-content/uploads/2023/02/IMG_8863-COVER_1-1024x683.jpg",
-              "alt": "Portfolio"
-            },
-            "title": "Portfolio",
-            "subtitle": "Izabrani radovi — venčanja, parovi, lokacije i spotovi",
-            "breadcrumbs": [
-              {
-                "label": "Početna",
-                "url": "/"
-              },
-              {
-                "label": "Portfolio",
-                "url": ""
-              }
-            ]
-          }
-        },
-        {
-          "component": "media-showcase",
-          "props": {
-            "filterable": true,
-            "tags": [
-              "Sve",
-              "Venčanja",
-              "Parovi",
-              "Detalji",
-              "Lokacije",
-              "Video"
-            ],
-            "pageSize": 9
           }
         }
       ],

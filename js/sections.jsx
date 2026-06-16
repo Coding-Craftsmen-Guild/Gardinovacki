@@ -29,10 +29,10 @@ function CTA({ cta, kind = 'primary', size }) {
 }
 
 /* ───────────────────────────────────── SectionHead — unified across sections */
-function SectionHead({ pretitle, title, text, action }) {
+function SectionHead({ pretitle, title, text, action, centered }) {
   if (!pretitle && !title && !text && !action) return null;
   return (
-    <div className="section-head">
+    <div className={cls('section-head', centered && 'section-head--centered')}>
       <div className="section-head__copy">
         {pretitle && <div className="section-head__pre">{pretitle}</div>}
         {title && <h2 className="section-head__title">{title}</h2>}
@@ -297,6 +297,46 @@ function Footer({ data, navData }) {
   );
 }
 
+/* ───────────────────────────────────── Connect (CTA teaser → contact page) */
+function ConnectSection({ page }) {
+  // Deterministic per-page variation so layout + image differ across the site
+  const key = (page && page.path) || '/';
+  let h = 0;
+  for (let i = 0; i < key.length; i++) h = (h * 31 + key.charCodeAt(i)) >>> 0;
+
+  const pool = ((window.SITE_DATA && window.SITE_DATA.mediaPool) || [])
+    .filter((m) => m.type === 'gallery' && m.cover)
+    .map((m) => ({ src: m.cover, alt: m.alt || 'Gardinovački' }));
+  const photo = pool.length ? pool[h % pool.length] : null;
+  const variant = ['right', 'left', 'right-low'][h % 3];
+
+  return (
+    <section className={cls('connect', 'connect--' + variant)} data-screen-label="connect">
+      <div className="connect__inner">
+        <p className="connect__quote">
+          Cveće će uvenuti, hrana će biti pojedena, čaše polomljene, a haljina će
+          visiti prljava — sve što ostaje su uspomene i fotografije.
+        </p>
+
+        <div className="connect__ctawrap">
+          <a className="connect__cta" href="#/kontakt/" onClick={(e) => { e.preventDefault(); navTo('/kontakt/'); }}>
+            <span>Kontaktirajte me</span> <Icon.Arrow size={14} />
+          </a>
+        </div>
+
+        <div className="connect__word" aria-hidden="true">CONNECT</div>
+        <div className="connect__caption">Stvorimo uspomene zajedno</div>
+
+        {photo && (
+          <a className="connect__photo" href="#/kontakt/" onClick={(e) => { e.preventDefault(); navTo('/kontakt/'); }} aria-label="Kontakt">
+            <img src={photo.src} alt={photo.alt} loading="lazy" />
+          </a>
+        )}
+      </div>
+    </section>
+  );
+}
+
 /* ───────────────────────────────────── ContactFormSection */
 function ContactFormSection({ data }) {
   const { backgroundImage, heading, intro, contactDetails, form } = data.props;
@@ -390,7 +430,6 @@ function CarouselHeroBanner({ props }) {
 
       <div className="hero__content">
         <div className="hero__top">
-          <div className="eyebrow eyebrow--light">Venčanja · Fine art · Srbija &amp; region</div>
         </div>
         <div className="hero__center">
           <h1 className="hero__headline">{headline.split(' ').map((w, j) => (
@@ -398,12 +437,6 @@ function CarouselHeroBanner({ props }) {
               ? <span key={j}><em className="serif-italic">{w}</em></span>
               : <span key={j}>{w} </span>
           ))}</h1>
-          <p className="hero__intro">{intro}</p>
-          <div className="hero__ctas">
-            {ctas.map((c, idx) => (
-              <CTA key={idx} cta={c} kind={c.variant === 'secondary' ? 'secondary' : 'primary'} size="lg" />
-            ))}
-          </div>
         </div>
 
         <div className="hero__bottom">
@@ -431,39 +464,17 @@ function CarouselHeroBanner({ props }) {
 function IntroText({ props }) {
   const { heading, body, image, cta, eyebrow, variant, orbit } = props;
 
-  // ── Orbit variant: centered text ringed by floating portrait frames ──
+  // ── Orbit variant: masonry image wall behind centered white text ──
   if (variant === 'orbit') {
-    // Hand-tuned elliptical ring positions (center of each frame, % of container).
-    const RING = [
-      { left: 20, top: 12, w: 188, rot: -3, d: 0.0 },
-      { left: 37, top: 4,  w: 166, rot:  2, d: 0.8 },
-      { left: 57, top: 7,  w: 214, rot: -2, d: 1.6 },
-      { left: 75, top: 17, w: 178, rot:  3, d: 0.4 },
-      { left: 87, top: 46, w: 196, rot: -2, d: 1.2 },
-      { left: 74, top: 79, w: 172, rot:  3, d: 0.2 },
-      { left: 56, top: 89, w: 210, rot: -3, d: 1.0 },
-      { left: 37, top: 85, w: 174, rot:  2, d: 1.8 },
-      { left: 21, top: 74, w: 190, rot: -2, d: 0.6 },
-      { left: 11, top: 43, w: 182, rot:  3, d: 1.4 },
-    ];
-    const frames = (orbit || []).slice(0, RING.length);
+    const frames = (orbit || []);
     return (
       <section className="intro-orbit">
-        <div className="intro-orbit__ring" aria-hidden="true">
-          {frames.map((im, idx) => {
-            const p = RING[idx];
+        <div className="intro-orbit__masonry" aria-hidden="true">
+          {Array.from({ length: 15 }).map((_, idx) => {
+            const im = frames[idx % frames.length] || {};
+            const span = (idx % 5 === 0) ? ' is-tall' : '';
             return (
-              <figure
-                key={idx}
-                className="intro-orbit__frame"
-                style={{
-                  left: p.left + '%',
-                  top: p.top + '%',
-                  width: p.w + 'px',
-                  '--rot': p.rot + 'deg',
-                  '--delay': p.d + 's',
-                }}
-              >
+              <figure key={idx} className={'intro-orbit__tile' + span}>
                 <img src={im.src} alt={im.alt || ''} loading="lazy" />
               </figure>
             );
@@ -477,15 +488,6 @@ function IntroText({ props }) {
             {(body || []).map((p, idx) => <p key={idx}>{p}</p>)}
           </div>
           {cta && <div className="intro-orbit__cta"><CTA cta={cta} kind="primary" /></div>}
-        </div>
-
-        {/* Mobile fallback strip — shown only on narrow screens */}
-        <div className="intro-orbit__strip" aria-hidden="true">
-          {frames.slice(0, 6).map((im, idx) => (
-            <figure key={idx} className="intro-orbit__thumb">
-              <img src={im.src} alt={im.alt || ''} loading="lazy" />
-            </figure>
-          ))}
         </div>
       </section>
     );
@@ -507,6 +509,80 @@ function IntroText({ props }) {
           <img src={image.src} alt={image.alt} />
         </figure>
       )}
+    </section>
+  );
+}
+
+/* ───────────────────────────────────── MasonryWall — bare image masonry, loads more on scroll */
+function MasonryWall({ props }) {
+  const { images: imagesProp, initial = 8, step = 4, max = 20 } = props || {};
+  // Source images: explicit prop, else flatten the gallery pool
+  const allImages = React.useMemo(() => {
+    if (imagesProp && imagesProp.length) return imagesProp.slice(0, max);
+    const pool = (window.SITE_DATA && window.SITE_DATA.mediaPool) || [];
+    const flat = [];
+    const seen = new Set();
+    pool.filter((m) => m.type === 'gallery').forEach((g) => {
+      (g.images || []).forEach((im) => {
+        if (im && im.src && !seen.has(im.src)) { seen.add(im.src); flat.push(im); }
+      });
+    });
+    // interleave so adjacent images aren't all from the same wedding
+    return flat.slice(0, max);
+  }, [imagesProp, max]);
+
+  const [count, setCount] = useState(Math.min(initial, allImages.length));
+  const sentinelRef = useRef(null);
+
+  useEffect(() => {
+    if (count >= allImages.length) return;
+    let ticking = false;
+    const check = () => {
+      ticking = false;
+      const el = sentinelRef.current;
+      if (!el) return;
+      const rect = el.getBoundingClientRect();
+      if (rect.top <= window.innerHeight + 400) {
+        setCount((c) => Math.min(c + step, allImages.length));
+      }
+    };
+    const onScroll = () => { if (!ticking) { ticking = true; requestAnimationFrame(check); } };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    // run once in case the sentinel is already near the viewport
+    check();
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
+  }, [count, step, allImages.length]);
+
+  const shown = allImages.slice(0, count);
+  return (
+    <section className="mwall">
+      <div className="mwall__masonry">
+        {shown.map((im, idx) => (
+          <figure key={im.src || idx} className="mwall__item" style={{ '--i': idx % step }}>
+            <img src={im.src} alt={im.alt || ''} loading="lazy" />
+          </figure>
+        ))}
+      </div>
+      {count < allImages.length && <div ref={sentinelRef} className="mwall__sentinel" aria-hidden="true"></div>}
+    </section>
+  );
+}
+function Awards({ props }) {
+  const { title, logos } = props;
+  return (
+    <section className="awards">
+      {title && <div className="awards__title eyebrow">{title}</div>}
+      <div className="awards__row">
+        {(logos || []).map((l, idx) => (
+          l.src
+            ? <figure key={idx} className="awards__logo"><img src={l.src} alt={l.alt || ''} loading="lazy" /></figure>
+            : <span key={idx} className="awards__wordmark">{l.label}</span>
+        ))}
+      </div>
     </section>
   );
 }
@@ -647,7 +723,23 @@ function useStepCarousel(totalCards, enabled, intervalMs = 4800) {
 
 /* ─────────────────────────────────────── Cards — carousel by default; static grid when props.layout === 'grid' */
 function Cards({ props, pageCtx }) {
-  const { heading, intro, cards, variant, pretitle, headAction, layout } = props;
+  const { heading, intro, variant, pretitle, headAction, layout, source } = props;
+
+  const isStories = variant === 'stories';
+
+  // For stories we keep the RAW gallery objects so we can reuse the portfolio MediaCard design
+  const storyGalleries = (source === 'galleries' && window.SITE_DATA && window.SITE_DATA.mediaPool)
+    ? window.SITE_DATA.mediaPool.filter((m) => m.type === 'gallery')
+    : [];
+
+  // Build cards from the global gallery pool when source === 'galleries' (reuses the exact card design)
+  const cards = isStories
+    ? storyGalleries
+    : (source === 'galleries' && window.SITE_DATA && window.SITE_DATA.mediaPool)
+      ? window.SITE_DATA.mediaPool
+          .filter((m) => m.type === 'gallery')
+          .map((g) => ({ image: g.cover, alt: g.alt || g.title, title: g.title, description: g.text, cta: g.cta }))
+      : props.cards;
 
   // Shared card renderer (grid + carousel)
   const renderGridCard = (c, idx) => {
@@ -718,6 +810,11 @@ function Cards({ props, pageCtx }) {
 
   const renderCard = (c, idx) => {
     const realIdx = idx % cards.length;
+    if (isStories) {
+      const MC = window.MediaCard;
+      const open = isInternal(c.cta && c.cta.url) ? () => navTo(c.cta.url) : undefined;
+      return <MC key={idx} item={c} onOpen={open} />;
+    }
     const handler = isInternal(c.cta && c.cta.url) ? (e) => { e.preventDefault(); navTo(c.cta.url); } : undefined;
     return (
       <a key={idx} className="card" href={c.cta ? hashFor(c.cta.url) : '#'} onClick={handler}>
@@ -743,6 +840,7 @@ function Cards({ props, pageCtx }) {
       'cards',
       variant === 'packages' && 'cards--packages',
       variant === 'services' && 'cards--services',
+      isStories && 'cards--stories',
       'cards--carousel'
     )}>
       <SectionHead
@@ -750,6 +848,7 @@ function Cards({ props, pageCtx }) {
         title={heading}
         text={intro}
         action={action}
+        centered={isStories}
       />
       <div
         className={cls('cards-carousel', !shouldAnimate && 'cards-carousel--static')}
@@ -1226,7 +1325,7 @@ function FeatureBanner({ props }) {
 }
 
 Object.assign(window, {
-  Header, Footer, ContactFormSection,
+  Header, Footer, ContactFormSection, ConnectSection,
   CarouselHeroBanner, IntroText, Cards, ServiceCarouselGallery,
   StandardBanner, MediaGallery, Numbers, InstagramFeed,
   FeatureBanner,

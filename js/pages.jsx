@@ -14,6 +14,8 @@ const SECTION_RENDERERS = {
   'media-showcase':           (s, ctx) => <MediaShowcase props={s.props} />,
   'media-gallery':            (s, ctx) => <MediaGallery props={s.props} onOpenLightbox={ctx.openLightbox} />,
   'numbers':                  (s, ctx) => <Numbers props={s.props} />,
+  'awards':                   (s, ctx) => <Awards props={s.props} />,
+  'masonry-wall':             (s, ctx) => <MasonryWall props={s.props} />,
   // 'instagram-feed' is intentionally omitted — the IG strip now lives in the global footer.
   'instagram-feed':           () => null,
 };
@@ -139,12 +141,15 @@ function App() {
 
   const globals = window.SITE_DATA.globals;
   const useGlobals = page.globalSections || ['header', 'contact-form-section', 'footer'];
+  const isKontakt = page.path === '/kontakt/';
 
   return (
     <div className="app">
       {useGlobals.includes('header') && <Header data={globals.header} />}
       <PageBody page={page} />
-      {useGlobals.includes('contact-form-section') && <ContactFormSection data={globals['contact-form-section']} />}
+      {useGlobals.includes('contact-form-section') && (isKontakt
+        ? <ContactFormSection data={globals['contact-form-section']} />
+        : <ConnectSection page={page} />)}
       {useGlobals.includes('footer') && <Footer data={globals.footer} navData={globals.header} />}
     </div>
   );

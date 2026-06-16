@@ -232,9 +232,18 @@ function MediaShowcase({ props }) {
       </div>
 
       <div className="ms-masonry">
-        {shown.map((item, idx) => (
-          <MediaCard key={item.id || idx} item={item} onOpen={() => setLbIndex(idx)} />
-        ))}
+        {shown.map((item, idx) => {
+          // Gallery cards link straight to their gallery page; videos open the lightbox.
+          const galleryHref = item.type === 'gallery' && item.cta && item.cta.url && item.cta.url.startsWith('/')
+            ? item.cta.url : null;
+          return (
+            <MediaCard
+              key={item.id || idx}
+              item={item}
+              onOpen={() => { if (galleryHref) sNavTo(galleryHref); else setLbIndex(idx); }}
+            />
+          );
+        })}
       </div>
 
       {hasMore && (
@@ -258,3 +267,4 @@ function MediaShowcase({ props }) {
 }
 
 window.MediaShowcase = MediaShowcase;
+window.MediaCard = MediaCard;
