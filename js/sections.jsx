@@ -157,9 +157,9 @@ function Header({ data }) {
   return (
     <header className={cls('site-header', scrolled && 'is-scrolled', open && 'is-open')}>
       <div className="site-header__inner">
-        <a className="site-header__mark" href="#/" onClick={(e) => { e.preventDefault(); navTo('/'); }}>
-          <span className="mark-word">Gardinovački</span>
-          <span className="mark-sub">Weddings &amp; Fine Art</span>
+        <a className="site-header__mark" href="#/" onClick={(e) => { e.preventDefault(); navTo('/'); }} aria-label="Gardinovački — Weddings & Fine Art">
+          <img className="site-header__logo site-header__logo--light" src="assets/logo-white.webp" alt="Gardinovački" />
+          <img className="site-header__logo site-header__logo--dark" src="assets/logo-dark.webp" alt="Gardinovački" />
         </a>
 
         <nav className="site-header__nav">
@@ -256,6 +256,7 @@ function Footer({ data, navData }) {
         </div>
 
         <a className="footer-brandmark" href="#/" onClick={(e) => { e.preventDefault(); navTo('/'); }}>
+          <img className="footer-brandmark__logo" src="assets/logo-white.webp" alt="Gardinovački" />
           <span className="footer-brandmark__word">Gardinovački</span>
           <span className="footer-brandmark__sub">Weddings &amp; Fine Art</span>
         </a>

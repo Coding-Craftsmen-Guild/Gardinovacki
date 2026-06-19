@@ -40,16 +40,8 @@ function GalleryFooterNav({ current }) {
   };
   return (
     <section className="gallery-nav">
-      <a className="gallery-nav__side gallery-nav__side--prev" href={hashFor(prev.path)} onClick={(e) => { e.preventDefault(); navTo(prev.path); }}>
-        <span className="eyebrow">← Prethodna galerija</span>
-        <span className="gallery-nav__title">{titleOf(prev)}</span>
-      </a>
       <a className="gallery-nav__center" href="#/galerija/tijana-luka/" onClick={(e) => { e.preventDefault(); navTo('/galerija/tijana-luka/'); }}>
         <span className="eyebrow">Sve galerije venčanja</span>
-      </a>
-      <a className="gallery-nav__side gallery-nav__side--next" href={hashFor(next.path)} onClick={(e) => { e.preventDefault(); navTo(next.path); }}>
-        <span className="eyebrow">Sledeća galerija →</span>
-        <span className="gallery-nav__title">{titleOf(next)}</span>
       </a>
     </section>
   );

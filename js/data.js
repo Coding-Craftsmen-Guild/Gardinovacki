@@ -390,11 +390,9 @@ window.SITE_DATA = {
           "props": {
             "title": "Nagrade",
             "logos": [
-              { "label": "VOGUE" },
-              { "label": "ELLE" },
-              { "label": "JUNEBUG" },
-              { "label": "BAZAAR" },
-              { "label": "BRIDES" }
+              { "src": "assets/award-brides.webp", "alt": "Brides" },
+              { "src": "assets/award-rangefinder.png", "alt": "Rangefinder" },
+              { "src": "assets/award-wedissimo.webp", "alt": "Wedissimo" }
             ]
           }
         },
